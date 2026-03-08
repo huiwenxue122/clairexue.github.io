@@ -6,7 +6,6 @@ import "./Resume.css";
 import myResumePdf from "../../assets/docs/Claire_Xue_Resume.pdf";
 import { Document, Page, pdfjs } from "react-pdf";
 import Button from "../../components/button/Button";
-import { greeting } from "../../portfolio";
 import TopButton from "../../components/topButton/TopButton";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
@@ -90,7 +89,7 @@ export default class ResumePage extends Component {
                 <Button
                   text="📃 Download Resume"
                   newTab={true}
-                  href={greeting.resumeLink}
+                  href={myResumePdf}
                   theme={theme}
                 />
               </div>

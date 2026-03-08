@@ -7,6 +7,7 @@ import Button from "../../components/button/Button";
 import { Fade } from "react-reveal";
 import "./ContactComponent.css";
 import { contactPageData } from "../../portfolio.js";
+import resumePdf from "../../assets/docs/Claire_Xue_Resume.pdf";
 
 const ContactData = contactPageData.contactSection;
 const addressSection = contactPageData.addressSection;
@@ -43,7 +44,12 @@ class Contact extends Component {
                 </p>
                 <SocialMedia theme={theme} />
                 <div className="resume-btn-div">
-                  <Button text="See My Resume" href="/resume" theme={theme} />
+                  <Button
+                    text="See My Resume"
+                    newTab={true}
+                    href={resumePdf}
+                    theme={theme}
+                  />
                 </div>
               </div>
             </div>

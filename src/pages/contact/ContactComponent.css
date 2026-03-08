@@ -3,8 +3,9 @@
 }
 
 .basic-contact {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
+  max-width: 96%;
 }
 
 .contact-heading-div {
@@ -26,6 +27,13 @@
 
 .contact-heading-div > * {
   flex: 1;
+}
+.contact-heading-text-div {
+  flex: 1.3;
+  min-width: 0;
+}
+.contact-heading-img-div {
+  flex: 0.7;
 }
 
 .address-heading-div > * {
@@ -120,6 +128,7 @@
   margin-right: 20px;
   font-family: var(--font-body);
   white-space: pre-line;
+  min-width: 22em;
 }
 
 .blog-header-detail-text {
