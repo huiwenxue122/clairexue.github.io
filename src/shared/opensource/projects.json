@@ -1,124 +1,58 @@
 {
   "data": [
     {
-      "id": "R_kgDOJWL0-g",
-      "name": "mdp-diffusion",
-      "createdAt": "2023-04-13T04:18:19Z",
-      "url": "https://github.com/ashutosh1919/mdp-diffusion",
-      "description": "Text-guided image editing by manipulating diffusion path without any training.",
+      "id": "meetingflowai",
+      "name": "Multi-Agent Sales Automation System",
+      "createdAt": "2025-11-01T00:00:00Z",
+      "url": "https://github.com/huiwenxue122/MeetingFlowAI",
+      "description": "A comprehensive sales automation platform built for the IBM watsonx Orchestrate Hackathon. It uses a multi-agent AI system to automatically process sales meeting transcripts, extract key information, update CRM systems, and generate follow-up communications.",
       "isFork": false,
-      "languages": [
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        },
-        {
-          "name": "Shell",
-          "iconifyClass": "simple-icons:shell"
-        },
-        {
-          "name": "Jupyter Notebook",
-          "iconifyClass": "logos-jupyter"
-        }
-      ]
+      "languages": []
     },
     {
-      "id": "R_kgDOG_vYHA",
-      "name": "explainable-cnn",
-      "createdAt": "2022-03-13T20:41:33Z",
-      "url": "https://github.com/ashutosh1919/explainable-cnn",
-      "description": "📦 PyTorch based visualization package for generating layer-wise explanations for CNNs.",
+      "id": "stellar-ai-treasury",
+      "name": "Multi-Agent Quantitative Trading System on Stellar Blockchain",
+      "createdAt": "2024-10-26T00:00:00Z",
+      "url": "https://github.com/huiwenxue122/Stellar-AI-Treasury?tab=readme-ov-file",
+      "description": "AI-powered multi-agent quantitative trading platform that combines GPT-4o AI agents with Stellar Soroban smart contracts for transparent, secure portfolio management. Three specialized agents (Trading, Risk, Payment) execute 10 strategies while a custom Rust contract enforces risk limits on-chain.",
       "isFork": false,
-      "languages": [
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        }
-      ]
+      "languages": []
     },
     {
-      "id": "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
-      "name": "masterPortfolio",
-      "createdAt": "2020-03-06T16:26:54Z",
-      "url": "https://github.com/ashutosh1919/masterPortfolio",
-      "description": "🔥 The Complete Customizable Software Developer Portfolio Template which lets you showcase your work and provides each and every detail about you as Software Developer.",
+      "id": "enterprise-knowledge-qa",
+      "name": "Enterprise Knowledge QA System",
+      "createdAt": "2025-01-01T00:00:00Z",
+      "url": "https://github.com/huiwenxue122/Enterprise-Knowledge-QA-System",
+      "description": "An AI-powered document question-answering system that allows users to upload enterprise documents (such as annual reports or policies), and interactively ask questions based on their content.",
       "isFork": false,
-      "languages": [
-        {
-          "name": "HTML",
-          "iconifyClass": "logos-html-5"
-        },
-        {
-          "name": "CSS",
-          "iconifyClass": "logos-css-3"
-        },
-        {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
-        },
-        {
-          "name": "Dockerfile",
-          "iconifyClass": "simple-icons:docker"
-        }
-      ]
+      "languages": []
     },
     {
-      "id": "R_kgDOG0_8uQ",
-      "name": "react-awesome-shapes",
-      "createdAt": "2022-02-11T14:50:20Z",
-      "url": "https://github.com/ashutosh1919/react-awesome-shapes",
-      "description": "🌀 Insert Awesome Shapes into Your React Site with Ease.",
+      "id": "multi-robot-formation-control",
+      "name": "Multi-Robot Formation Control System",
+      "createdAt": "2025-01-01T00:00:00Z",
+      "url": "https://github.com/huiwenxue122/multi-robot-formation-control",
+      "description": "A comprehensive multi-robot formation control system with natural language interface, featuring collision-free path planning using ORCA (Optimal Reciprocal Collision Avoidance) and an interactive Streamlit web UI.",
       "isFork": false,
-      "languages": [
-        {
-          "name": "HTML",
-          "iconifyClass": "logos-html-5"
-        },
-        {
-          "name": "CSS",
-          "iconifyClass": "logos-css-3"
-        },
-        {
-          "name": "Shell",
-          "iconifyClass": "simple-icons:shell"
-        },
-        {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
-        }
-      ]
+      "languages": []
     },
     {
-      "id": "R_kgDOGcPKSQ",
-      "name": "neuro-symbolic-sudoku-solver",
-      "createdAt": "2021-11-26T17:56:07Z",
-      "url": "https://github.com/ashutosh1919/neuro-symbolic-sudoku-solver",
-      "description": "⚙️ Solving sudoku using Deep Reinforcement learning in combination with powerful symbolic representations.",
+      "id": "eeg-bci-target-classification",
+      "name": "EEG Signal Classification",
+      "createdAt": "2025-01-01T00:00:00Z",
+      "url": "https://github.com/huiwenxue122/EEG-BCI-Target-Classification",
+      "description": "The project focuses on detecting the N2pc Event-Related Potential (ERP) from EEG signals to classify whether a visual target appeared on the left or right side of the screen.",
       "isFork": false,
-      "languages": [
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        }
-      ]
+      "languages": []
     },
     {
-      "id": "MDEwOlJlcG9zaXRvcnkzMjU5NDM1MTE=",
-      "name": "react-liquidswipe",
-      "createdAt": "2021-01-01T08:31:51Z",
-      "url": "https://github.com/ashutosh1919/react-liquidswipe",
-      "description": "🚀 Smooth Liquid Swipe Animation to transition between different components.",
+      "id": "deep-image-restoration",
+      "name": "Image Restoration",
+      "createdAt": "2025-01-01T00:00:00Z",
+      "url": "https://github.com/huiwenxue122/DeepImageRestoration",
+      "description": "Image Restoration uses deeping learning techniques like Swin Transformer and efficient decoder.",
       "isFork": false,
-      "languages": [
-        {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
-        },
-        {
-          "name": "CSS",
-          "iconifyClass": "logos-css-3"
-        }
-      ]
+      "languages": []
     }
   ]
 }

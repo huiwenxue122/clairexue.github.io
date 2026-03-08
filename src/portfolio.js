@@ -22,7 +22,7 @@ const greeting = {
   title: "Claire Xue",
   logo_name: "Claire Xue",
   nickname: "Huiwen惠文 Xue薛",
-  subTitle: "Applied AI Engineer | High-Performance ML Systems",
+  subTitle: "Applied AI Engineer ",
   introParagraph:
     "Building high-performance ML systems and scalable AI backends. I'm passionate about making AI work reliably in production.",
   resumeLink:

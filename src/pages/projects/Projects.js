@@ -14,7 +14,6 @@ import {
 } from "../../portfolio.js";
 import ProjectsData from "../../shared/opensource/projects.json";
 import "./Projects.css";
-import ProjectsImg from "./ProjectsImg";
 
 class Projects extends Component {
   render() {
@@ -25,27 +24,12 @@ class Projects extends Component {
         <div className="basic-projects">
           <Fade bottom duration={2000} distance="40px">
             <div className="projects-heading-div">
-              <div className="projects-heading-img-div">
-                {/* <img
-											src={require(`../../assets/images/${projectsHeader["avatar_image_path"]}`)}
-											alt=""
-										/> */}
-                <ProjectsImg theme={theme} />
-              </div>
-              <div className="projects-heading-text-div">
-                <h1
-                  className="projects-heading-text"
-                  style={{ color: theme.text }}
-                >
-                  {projectsHeader.title}
-                </h1>
-                <p
-                  className="projects-header-detail-text subTitle"
-                  style={{ color: theme.secondaryText }}
-                >
-                  {projectsHeader["description"]}
-                </p>
-              </div>
+              <h1
+                className="projects-heading-text"
+                style={{ color: theme.text }}
+              >
+                {projectsHeader.title}
+              </h1>
             </div>
           </Fade>
         </div>

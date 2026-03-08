@@ -23,7 +23,6 @@
   font-family: var(--font-body);
   font-size: 1.05rem;
   line-height: 1.7;
-  max-width: 42em;
   margin: 0;
 }
 
@@ -39,7 +38,6 @@
   border-radius: 8px;
   border: 1px solid rgba(26, 29, 41, 0.08);
   padding: 1.25rem 1.5rem;
-  max-width: 42em;
 }
 
 .whatido-education-header {
