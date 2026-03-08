@@ -74,12 +74,14 @@ class Projects extends Component {
                   >
                     {publicationsHeader.title}
                   </h1>
-                  <p
-                    className="projects-header-detail-text subTitle"
-                    style={{ color: theme.secondaryText }}
-                  >
-                    {publicationsHeader["description"]}
-                  </p>
+                  {publicationsHeader.tagline && (
+                    <p
+                      className="projects-header-detail-text subTitle publications-tagline"
+                      style={{ color: theme.secondaryText }}
+                    >
+                      {publicationsHeader.tagline}
+                    </p>
+                  )}
                 </div>
               </div>
             </Fade>

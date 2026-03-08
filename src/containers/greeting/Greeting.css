@@ -63,6 +63,16 @@
   max-width: 32em;
 }
 
+.greeting-tagline {
+  margin-bottom: 0.25rem;
+}
+
+.greeting-intro {
+  margin-top: 0.5rem;
+  font-size: 1.05rem;
+  max-width: 28em;
+}
+
 .greeting-image-div > * {
   max-width: 100%;
   height: auto;

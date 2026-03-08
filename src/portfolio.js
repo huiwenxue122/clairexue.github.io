@@ -22,7 +22,9 @@ const greeting = {
   title: "Claire Xue",
   logo_name: "Claire Xue",
   nickname: "Huiwen惠文 Xue薛",
-  subTitle: "Building the future, one commit at a time.",
+  subTitle: "Applied AI Engineer | High-Performance ML Systems",
+  introParagraph:
+    "I build robust, production-ready AI backends that bridge the gap between cutting-edge research and scalable infrastructure.",
   resumeLink:
     "https://drive.google.com/file/d/1W1Zn_GglEhYV1myTyAi8NtoGWXSfFEq3/view?usp=drive_link",
   portfolio_repository: "https://github.com/huiwenxue122",
@@ -664,32 +666,45 @@ const projectsHeader = {
 
 const publicationsHeader = {
   title: "Publications",
-  description: "Some of my published Articles, Blogs and Research.",
+  tagline:
+    "My research focuses on three pillars of modern AI Engineering: Infrastructure Optimization, Knowledge Evolution, and Feature-Driven Precision.",
   avatar_image_path: "projects_image.svg",
 };
 
 const publications = {
   data: [
     {
-      id: "neuro-symbolic-sudoku-solver",
-      name: "Neuro-Symbolic Sudoku Solver",
+      id: "acoustic-feature-classification",
+      name: "Acoustic Feature Classification System",
       createdAt: "2023-07-02T00:00:00Z",
-      description: "Paper published in KDD KiML 2023",
-      url: "https://arxiv.org/abs/2307.00653",
+      description:
+        "Developed a high-precision ML framework for acoustic pattern recognition, achieving 99.73% accuracy through advanced feature fusion.",
+      url:
+        "https://www.researchgate.net/publication/376166223_Effective_acoustic_parameters_for_automatic_classification_of_performed_and_synthesized_Guzheng_music",
     },
     {
-      id: "mdp-diffusion",
-      name: "MDP-Diffusion",
-      createdAt: "2023-09-19T00:00:00Z",
-      description: "Blog published in Paperspace",
-      url: "https://blog.paperspace.com/mdp-diffusion/",
+      id: "gnn-distributed-optimizer",
+      name: "GNN-based Distributed System Optimizer",
+      createdAt: "2023-02-27T00:00:00Z",
+      description:
+        "Proposed a novel Graph Neural Network (GNN) framework to optimize the training of billion-parameter models across regionally distributed computing systems. By intelligently mapping model layers to hardware nodes, the system improved training efficiency by over 20%.",
+      url: "https://arxiv.org/abs/2302.13741",
     },
     {
-      id: "consistency-models",
-      name: "Consistency Models",
-      createdAt: "2023-10-12T00:00:00Z",
-      description: "Blog published in Paperspace",
-      url: "https://blog.paperspace.com/consistency-models/",
+      id: "self-escalation-llms",
+      name: "Self-Escalation Learning for LLMs",
+      createdAt: "2023-04-01T00:00:00Z",
+      description:
+        "Developed a novel training framework that enables Natural Language Generation (NLG) models to autonomously learn up-to-date knowledge without requiring additional external datasets. By implementing a dual-model self-escalation process, this work achieved stable performance improvements across seven natural language processing tasks without altering the model architecture.",
+      url: "https://www.mdpi.com/2076-3417/13/8/4758",
+    },
+    {
+      id: "vector-level-augmentation-nlu",
+      name: "Vector-Level Data Augmentation for NLU",
+      createdAt: "2022-12-12T00:00:00Z",
+      description:
+        "Engineered Random Position Noise (RPN), a novel data augmentation algorithm that operates directly at the word vector (embedding) level to enhance Natural Language Understanding (NLU). Unlike traditional methods, RPN improves model robustness without requiring gradient updates during sample generation, making it highly efficient for large-scale datasets.",
+      url: "https://arxiv.org/abs/2212.05961",
     },
   ],
 };
@@ -807,7 +822,7 @@ const whatIDoEducation = {
 const personalIntro = {
   title: "A bit about me",
   content:
-    "Music: I play guitar and Guzheng (古筝). I enjoy calligraphy and learning languages — I speak Chinese and English, and I'm currently learning French.",
+    "Beyond the terminal, I am a multi-instrumentalist (Guitar & Guzheng古筝) and a dedicated practitioner of calligraphy. My passion for structured patterns extends to linguistics: I am trilingual in Mandarin, English, and currently mastering French. I believe that the discipline of traditional arts and the logic of language learning deeply inform my approach to building intuitive and culturally-aware AI systems.",
 };
 
 export {

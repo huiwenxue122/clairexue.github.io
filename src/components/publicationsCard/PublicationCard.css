@@ -34,13 +34,10 @@
 }
 
 .publication-description {
-  overflow: hidden;
   text-align: left;
-  display: -webkit-box;
   font-family: var(--font-body);
-  font-size: 0.95rem;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+  font-size: 0.85rem;
+  line-height: 1.5;
   margin-top: 0.8rem;
 }
 
@@ -74,7 +71,7 @@
   }
 
   .publication-description {
-    font-size: 14px;
+    font-size: 0.8rem;
   }
 
   .publication-details {

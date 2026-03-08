@@ -20,11 +20,19 @@ export default function Greeting(props) {
                 </h2>
               )}
               <p
-                className="greeting-text-p subTitle"
+                className="greeting-text-p greeting-tagline subTitle"
                 style={{ color: theme.secondaryText }}
               >
                 {greeting.subTitle}
               </p>
+              {greeting.introParagraph && (
+                <p
+                  className="greeting-text-p greeting-intro"
+                  style={{ color: theme.secondaryText }}
+                >
+                  {greeting.introParagraph}
+                </p>
+              )}
               <SocialMedia theme={theme} />
               {/* <div className="button-greeting-div">
               <Button text="Contact me" href="#contact" />
