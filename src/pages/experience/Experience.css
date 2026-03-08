@@ -2,30 +2,18 @@
   width: 100%;
 }
 
+/* 与 Projects 页一致：外框 margin 5%，内容区 max-width 1200px */
 .basic-experience {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.experience-content-wrap {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 24px;
-  width: 100%;
   box-sizing: border-box;
-}
-
-/* 上方图片+标题与下方 accordion 共用同一宽度：图片左、标题右为界 */
-.experience-content-grid {
-  display: grid;
-  grid-template-columns: 280px 1fr;
-  max-width: 900px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.experience-content-grid .experience-heading-div {
-  grid-column: 1 / -1;
-}
-
-.experience-content-grid .experience-accord {
-  grid-column: 1 / -1;
 }
 
 .experience-heading-div {
@@ -101,11 +89,6 @@
 
   .experience-heading-sub-text {
     font-size: 20px;
-  }
-
-  .experience-content-grid {
-    grid-template-columns: 1fr;
-    max-width: 100%;
   }
 
   .experience-heading-div {
