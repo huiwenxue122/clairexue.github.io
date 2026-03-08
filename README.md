@@ -46,15 +46,16 @@
 To view a live example, **[click here](https://ashutosh1919.github.io/)**
 
 # Table of Contents
- - [Clone and Use](#clone-and-use)
- - [Customizing](#customize-it-to-make-your-own-portfolio)
- - [Choose Theme](#choose-theme)
- - [Deployment](#deployment)
- - [Technologies Used](#technologies-used)
- - [Illustrations](#illustrations)
- - [License](#license)
- - [Contributors](#contributors)
- - [References](#references)
+
+- [Clone and Use](#clone-and-use)
+- [Customizing](#customize-it-to-make-your-own-portfolio)
+- [Choose Theme](#choose-theme)
+- [Deployment](#deployment)
+- [Technologies Used](#technologies-used)
+- [Illustrations](#illustrations)
+- [License](#license)
+- [Contributors](#contributors)
+- [References](#references)
 
 # Clone and Use 📋
 
@@ -197,9 +198,11 @@ Therefore, this part of portfolio is not customizable. But don't worry we have a
 - Also, keep in mind that your resume must be in A4 size.
 - Now, go to <a href="/src/pages/resume/Resume.js">/src/pages/resume/Resume.js</a>.
 - In the import section, find:
+
 ```
 import myResumePdf from "../../assets/docs/Ashutosh_Hathidara_Resume_ML.pdf"
 ```
+
 - and replace **"Ashutosh_Hathidara_Resume_ML.pdf"** with your resume file name.
 - Launch the project and go to the route `/resume` to view your resume.
 
@@ -255,7 +258,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE)
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="http://ashutosh1919.github.io"><img src="https://avatars3.githubusercontent.com/u/20843596?s=460&u=7f184b911f73ae1dc5765ab686fff2b2e984830f&v=4?s=100" width="100px;" alt="Ashutosh Hathidara"/><br /><sub><b>Ashutosh Hathidara</b></sub></a><br /><a href="https://github.com/ashutosh1919/masterPortfolio/commits?author=ashutosh1919" title="Code">💻</a> <a href="https://github.com/ashutosh1919/masterPortfolio/commits?author=ashutosh1919" title="Documentation">📖</a> <a href="#design-ashutosh1919" title="Design">🎨</a> <a href="#maintenance-ashutosh1919" title="Maintenance">🚧</a> <a href="#ideas-ashutosh1919" title="Ideas, Planning, & Feedback">🤔</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://ashutosh1919.github.io"><img src="https://avatars3.githubusercontent.com/u/20843596?s=460&u=7f184b911f73ae1dc5765ab686fff2b2e984830f&v=4?s=100" width="100px;" alt="Claire Xuer"/><br /><sub><b>Claire Xuer</b></sub></a><br /><a href="https://github.com/ashutosh1919/masterPortfolio/commits?author=ashutosh1919" title="Code">💻</a> <a href="https://github.com/ashutosh1919/masterPortfolio/commits?author=ashutosh1919" title="Documentation">📖</a> <a href="#design-ashutosh1919" title="Design">🎨</a> <a href="#maintenance-ashutosh1919" title="Maintenance">🚧</a> <a href="#ideas-ashutosh1919" title="Ideas, Planning, & Feedback">🤔</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://danielmarostica.github.io/"><img src="https://avatars3.githubusercontent.com/u/3595998?v=4?s=100" width="100px;" alt="Daniel Marostica"/><br /><sub><b>Daniel Marostica</b></sub></a><br /><a href="https://github.com/ashutosh1919/masterPortfolio/commits?author=danielmarostica" title="Documentation">📖</a> <a href="#design-danielmarostica" title="Design">🎨</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://dineshnadimpalli.com"><img src="https://avatars2.githubusercontent.com/u/13104926?v=4?s=100" width="100px;" alt="Dinesh Nadimpalli"/><br /><sub><b>Dinesh Nadimpalli</b></sub></a><br /><a href="https://github.com/ashutosh1919/masterPortfolio/commits?author=dineshnadimpalli" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://jivthesh.github.io"><img src="https://avatars3.githubusercontent.com/u/20579980?v=4?s=100" width="100px;" alt="Jivthesh M R"/><br /><sub><b>Jivthesh M R</b></sub></a><br /><a href="https://github.com/ashutosh1919/masterPortfolio/commits?author=jivthesh" title="Documentation">📖</a></td>
