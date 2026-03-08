@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "16353ca39f8a182d27b2889ae1a02405",
+    "revision": "7068884872466f11e825e64d973d6041",
     "url": "/index.html"
   },
   {
-    "revision": "5c795c0b31c997b2ef1a",
-    "url": "/static/css/main.7c24dbc1.chunk.css"
+    "revision": "5ccf52c25f5db88cd567",
+    "url": "/static/css/main.eb373d45.chunk.css"
   },
   {
-    "revision": "c71399913cab32875da3",
-    "url": "/static/js/2.d79046a7.chunk.js"
+    "revision": "66ae4074e8bd5ed747f6",
+    "url": "/static/js/2.89307196.chunk.js"
   },
   {
-    "revision": "5c795c0b31c997b2ef1a",
-    "url": "/static/js/main.e221d718.chunk.js"
+    "revision": "5ccf52c25f5db88cd567",
+    "url": "/static/js/main.327436c2.chunk.js"
   },
   {
     "revision": "f4163cc1361175add5e6",
@@ -74,6 +74,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "058eca4cbdc03a1dad9a6bb943ac7831",
     "url": "/static/media/blogs_image.058eca4c.svg"
+  },
+  {
+    "revision": "bedc8464e9cff6ec999d112bdee8b2ca",
+    "url": "/static/media/brown.bedc8464.png"
   },
   {
     "revision": "cacbc42b661f39344af81c631d8d36a9",
@@ -196,6 +200,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/googleAssistant.a6addc3f.svg"
   },
   {
+    "revision": "33fe911ac00f28c49abe831485315a85",
+    "url": "/static/media/hackthon.33fe911a.jpg"
+  },
+  {
     "revision": "4fae4e798bd82fda53e55f2777cc53d3",
     "url": "/static/media/homepage.4fae4e79.JPG"
   },
@@ -216,8 +224,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/iu_logo.60ed0bd3.png"
   },
   {
+    "revision": "2c595ceb7d872ba816c3d8041352d994",
+    "url": "/static/media/jiu.2c595ceb.png"
+  },
+  {
     "revision": "5b4a6449747ec61a6d9aa874f2a9ceba",
     "url": "/static/media/jsFramework.5b4a6449.svg"
+  },
+  {
+    "revision": "915aa54d6662bb1986bb5b2946b686ac",
+    "url": "/static/media/lablab.915aa54d.png"
   },
   {
     "revision": "c597fbded5de799dfb9abc3fc4f1c26f",
@@ -258,6 +274,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2c497738be3831492aeb6bdc43f19154",
     "url": "/static/media/stanford_logo.2c497738.png"
+  },
+  {
+    "revision": "5ad8f6c4aa3675d5be5af57b6a34baa3",
+    "url": "/static/media/ste.5ad8f6c4.png"
   },
   {
     "revision": "6ac91b161c2c9934a44f72d75d18142d",
