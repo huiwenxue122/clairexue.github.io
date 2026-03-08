@@ -11,6 +11,23 @@
   box-sizing: border-box;
 }
 
+/* 上方图片+标题与下方 accordion 共用同一宽度：图片左、标题右为界 */
+.experience-content-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.experience-content-grid .experience-heading-div {
+  grid-column: 1 / -1;
+}
+
+.experience-content-grid .experience-accord {
+  grid-column: 1 / -1;
+}
+
 .experience-heading-div {
   display: flex;
 }
@@ -84,6 +101,11 @@
 
   .experience-heading-sub-text {
     font-size: 20px;
+  }
+
+  .experience-content-grid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
   }
 
   .experience-heading-div {
