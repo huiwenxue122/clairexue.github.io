@@ -17,13 +17,15 @@ export default function socialMedia(props) {
   return (
     <div className="social-media-div">
       {socialMediaLinks.map((media, i) => {
+        const isMailOrTel =
+          media.link.startsWith("mailto:") || media.link.startsWith("tel:");
         return (
           <a
             key={i}
             href={media.link}
             className={`icon-button`}
-            target="_blank"
-            rel="noopener noreferrer"
+            target={isMailOrTel ? undefined : "_blank"}
+            rel={isMailOrTel ? undefined : "noopener noreferrer"}
           >
             <IconWrapper {...media} {...props}>
               <i className={`fab ${media.fontAwesomeIcon}`}></i>
