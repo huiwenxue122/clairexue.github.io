@@ -41,41 +41,43 @@ export default function Skills(props) {
                 >
                   {category.title}
                 </h3>
-                {category.subsections.map((sub, subIdx) => (
-                  <div key={subIdx} className="tech-stack-subsection">
-                    {sub.label && (
-                      <div
-                        className="tech-stack-label"
-                        style={{ color: theme.secondaryText }}
-                      >
-                        {sub.label.toUpperCase()}
-                      </div>
-                    )}
-                    <div className="tech-stack-tags">
-                      {sub.items.map((item, i) => (
-                        <span
-                          key={i}
-                          className="tech-stack-tag"
-                          style={{
-                            color: theme.text,
-                            borderColor: "rgba(26, 29, 41, 0.15)",
-                            backgroundColor: theme.body,
-                          }}
+                <div className="tech-stack-card-body">
+                  {category.subsections.map((sub, subIdx) => (
+                    <div key={subIdx} className="tech-stack-subsection">
+                      {sub.label && (
+                        <div
+                          className="tech-stack-label"
+                          style={{ color: theme.secondaryText }}
                         >
-                          {item}
-                        </span>
-                      ))}
+                          {sub.label.toUpperCase()}
+                        </div>
+                      )}
+                      <div className="tech-stack-tags">
+                        {sub.items.map((item, i) => (
+                          <span
+                            key={i}
+                            className="tech-stack-tag"
+                            style={{
+                              color: theme.text,
+                              borderColor: "rgba(26, 29, 41, 0.15)",
+                              backgroundColor: theme.body,
+                            }}
+                          >
+                            {item}
+                          </span>
+                        ))}
+                      </div>
+                      {sub.description && (
+                        <p
+                          className="tech-stack-desc"
+                          style={{ color: theme.secondaryText }}
+                        >
+                          {sub.description}
+                        </p>
+                      )}
                     </div>
-                    {sub.description && (
-                      <p
-                        className="tech-stack-desc"
-                        style={{ color: theme.secondaryText }}
-                      >
-                        {sub.description}
-                      </p>
-                    )}
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             ))}
           </div>
@@ -88,12 +90,46 @@ export default function Skills(props) {
           <h2 className="whatido-section-title" style={{ color: theme.text }}>
             Education
           </h2>
-          <p
-            className="whatido-education-summary"
-            style={{ color: theme.secondaryText }}
-          >
-            {whatIDoEducation.summary}
-          </p>
+          <div className="whatido-education-entries">
+            {whatIDoEducation.entries.map((entry, idx) => (
+              <div
+                key={idx}
+                className="whatido-education-entry"
+                style={{
+                  borderColor: "rgba(26, 29, 41, 0.08)",
+                  backgroundColor: theme.highlight || "transparent",
+                }}
+              >
+                <div className="whatido-education-header">
+                  <h3
+                    className="whatido-education-school"
+                    style={{ color: theme.text }}
+                  >
+                    {entry.school}
+                  </h3>
+                  <span
+                    className="whatido-education-period"
+                    style={{ color: theme.secondaryText }}
+                  >
+                    {entry.period}
+                  </span>
+                </div>
+                <p
+                  className="whatido-education-degree"
+                  style={{ color: theme.text }}
+                >
+                  {entry.degree} | {entry.gpa}
+                </p>
+                <ul className="whatido-education-highlights">
+                  {entry.highlights.map((item, i) => (
+                    <li key={i} style={{ color: theme.secondaryText }}>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         </section>
       </Fade>
 

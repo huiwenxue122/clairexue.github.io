@@ -80,6 +80,36 @@ class ExperienceCard extends Component {
                       {experience["company"]}
                     </a>
                   </p>
+                  {(experience["github_url"] || experience["demo_url"]) && (
+                    <p
+                      className="experience-card-links"
+                      style={{ marginTop: 6 }}
+                    >
+                      {experience["github_url"] && (
+                        <>
+                          <a
+                            href={experience["github_url"]}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="experience-card-link"
+                          >
+                            GitHub
+                          </a>
+                          {experience["demo_url"] && " | "}
+                        </>
+                      )}
+                      {experience["demo_url"] && (
+                        <a
+                          href={experience["demo_url"]}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="experience-card-link"
+                        >
+                          Demo
+                        </a>
+                      )}
+                    </p>
+                  )}
                 </div>
                 <div>
                   <div className="experience-card-heading-right">
@@ -98,13 +128,7 @@ class ExperienceCard extends Component {
                   </div>
                 </div>
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "flex-start",
-                  marginTop: 20,
-                }}
-              >
+              <div className="experience-card-description">
                 <div className="repo-description" />
                 {experience["description"]}
               </div>

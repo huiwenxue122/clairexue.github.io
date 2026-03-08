@@ -24,7 +24,7 @@ const greeting = {
   nickname: "Huiwen惠文 Xue薛",
   subTitle: "Applied AI Engineer | High-Performance ML Systems",
   introParagraph:
-    "I build robust, production-ready AI backends that bridge the gap between cutting-edge research and scalable infrastructure.",
+    "Building high-performance ML systems and scalable AI backends. I'm passionate about making AI work reliably in production.",
   resumeLink:
     "https://drive.google.com/file/d/1W1Zn_GglEhYV1myTyAi8NtoGWXSfFEq3/view?usp=drive_link",
   portfolio_repository: "https://github.com/huiwenxue122",
@@ -498,158 +498,86 @@ const certifications = {
 // Experience Page
 const experience = {
   title: "Experience",
-  subtitle: "Internship, Research Experience and Hackathon",
+  /*subtitle: "Internship, Research Experience and Hackathon",
   description:
     "I have worked with many evolving startups as ML and DL Developer, Designer and Software Architect. I have also worked with some well established companies mostly as AI Developer. I love organising events and that is why I am also involved with many opensource communities as a representative.",
   header_image_path: "experience.svg",
+  */
+  header_image_path: "hackthon.jpg",
   sections: [
     {
-      title: "Internship",
+      title: "Hackathon",
       work: true,
       experiences: [
         {
-          title: "Machine Learning Engineer",
-          company: "TikTok Inc.",
-          company_url: "https://www.tiktok.com/en/",
-          logo_path: "tiktok_logo.png",
-          duration: "June 2023 - Present",
-          location: "San Jose, CA, USA",
+          title: "Stellar AI Treasury: Multi-Agent Quant Platform",
+          company: "Winner, Stellar x EasyA Hackathon",
+          company_url: "https://github.com/huiwenxue122/Stellar-AI-Treasury",
+          logo_path: "ste.png",
+          duration: "Oct 2025",
+          location: "Boston",
           description:
-            "Improving ads ranking models on the core TikTok product. Experience working on modeling two-tower architectures like DeepFM, Wide & deep learning, etc. Working on Large Language Models (LLM) pretraining and Large Multi-modal Model (LMM) finetuning strategies.",
+            "Autonomous Multi-Agent System: Built a collaborative Python framework using GPT-4o to execute 10+ quantitative strategies (LSTM, RL).\n\nOn-Chain Risk Control: Developed 570+ lines of Rust (Soroban) smart contracts featuring multi-signature auth and automated circuit breakers (VaR, Sharpe).\n\nReal-time Transparency: Integrated Horizon API and Streamlit to visualize live ROI and agent decision-making logic.\n\nStack: Python, Rust (Soroban), GPT-4o, Reinforcement Learning, Streamlit.",
+          github_url: "https://github.com/huiwenxue122/Stellar-AI-Treasury",
+          demo_url: "https://www.youtube.com/watch?v=Oo2z6eTNao8",
           color: "#000000",
         },
         {
-          title: "Associate AI Engineer",
-          company: "Legato Health Technology",
-          company_url: "https://legatohealthtech.com/",
-          logo_path: "legato_logo.png",
-          duration: "June 2020 - Aug 2021",
-          location: "Hyderabad, Telangana",
+          title: "MeetingFlowAI: Multi-Agent Sales Automation",
+          company: "IBM watsonx Hackathon",
+          company_url: "https://github.com/huiwenxue122/MeetingFlowAI",
+          logo_path: "lablab.png",
+          duration: "Nov 2025",
+          location: "",
           description:
-            "I am working on automating healthcare products. The projects involve automation for process improvements and for significantly enhancing the profits. I am currently working on Cancer Survival and Reoccurence Prediction. Our goal is to make AI system which scales and removes doctor dependency as much as possible.",
-          color: "#0879bf",
-        },
-        {
-          title: "Android and ML Developer",
-          company: "Muffito Incorporation",
-          company_url: "https://www.linkedin.com/company/muffito-inc/about/",
-          logo_path: "muffito_logo.png",
-          duration: "May 2018 - Oct 2018",
-          location: "Pune, Maharashtra",
-          description:
-            "I have created complete Android Application for locating Pub, Bar and beverage shops around you. I have also worked on implementation of algorithms for Face Detection, Text extraction from Image. I was involved in a team for creating complete software architecure of mobile and web application as well as admin panel for company.",
-          color: "#9b1578",
-        },
-        {
-          title: "Android Developer",
-          company: "FreeCopy Pvt. Ltd.",
-          company_url: "https://www.linkedin.com/company/freecopy/about/",
-          logo_path: "freecopy_logo.png",
-          duration: "Nov 2017 - Dec 2017",
-          location: "Ahmedabad, Gujarat",
-          description:
-            "FreeCopy is the Start up from Indian Institute of Management, Ahmedabad. I have changed the integration of the whole app from Google to Firebase. I learnt the efﬁcient ways of Data communications like Retroﬁt, Eventbus etc. I experienced the real time start up. I learnt the Design thinking of UI on perspective of People.",
-          color: "#fc1f20",
+            "Enterprise Orchestration: Engineered a multi-agent architecture using IBM Granite 13B models to automate post-meeting workflows, reducing 15 minutes of admin work to 2 minutes.\n\nSystem Integration: Developed a master orchestrator to coordinate specialized sub-agents for Sales Intelligence and automated Salesforce CRM updates via the watsonx Orchestrate SDK.\n\nEnd-to-End Delivery: Built a React-based frontend with real-time event listeners and Watson Chat Widget integration for seamless human-AI interaction.\n\nStack: IBM Granite, watsonx Orchestrate, React, Salesforce API, Node.js.",
+          github_url: "https://github.com/huiwenxue122/MeetingFlowAI",
+          demo_url:
+            "https://lablab.ai/ai-hackathons/agentic-ai-hackathon-ibm-watsonx-orchestrate/salesflow-ai/meetingflowai",
+          color: "#000000",
         },
       ],
     },
     {
-      title: "Research Experience",
+      title: "Experience",
       experiences: [
         {
-          title: "Machine Learning Intern",
-          company: "TikTok Inc.",
-          company_url: "https://www.tiktok.com/en/",
-          logo_path: "tiktok_logo.png",
-          duration: "May 2022 - Aug 2022",
-          location: "San Francisco, USA",
+          title: "Machine Learning Research Engineer",
+          company: "Brown University - lee.ai Lab",
+          company_url: "#",
+          logo_path: "brown.png",
+          duration: "Nov 2024 – Aug 2025",
+          location: "Providence, RI",
           description:
-            "Building new features on the backend recommendation system, specifically ranking algorithms for Ads that touch hundreds of millions of people around the world. Improving online and offline content ranking algorithms by performing hard sample data replays for training steps.",
+            "Model Reproduction: Successfully reproduced a complex sequence-modeling framework, ensuring the results matched the original paper's benchmarks.\n\nData Handling: Gained hands-on experience in processing and cleaning large-scale sequence data for neural network training.\n\nCollaboration: Presented findings in weekly Lab Meetings, discussing implementation challenges and data-driven insights with the research team.",
           color: "#000000",
         },
         {
-          title: "Data Science Research Intern",
-          company: "Delhivery Pvt. Ltd.",
-          company_url: "https://www.delhivery.com/",
-          logo_path: "delhivery_logo.png",
-          duration: "May 2019 - Sept 2019",
-          location: "Gurgaon, Haryana",
+          title: "Teaching Assistant",
+          company: "Brown University School of Engineering",
+          company_url: "#",
+          logo_path: "brown.png",
+          duration: "Sept 2024 – Dec 2025",
+          location: "Providence, RI",
           description:
-            "I have worked on project of predicting freight rates based on previous data. There were two objectives: (1) To build a forecasting engine to predict daily freight rates. (2) To embed feature in the model which can explain the seasonal major changes in freight rate based on regions and locations. I have closely worked with deep learning models in combination with statistical methods to create solution for this. At the end of internship, I had created model deployed on AWS EC2 with the use of Kafka stream jobs, ElasticSearch and PostgreSQL.",
-          color: "#ee3c26",
-        },
-        {
-          title: "Data Science Intern",
-          company: "Intel Indexer LLC",
-          company_url:
-            "https://opencorporates.com/companies/us_dc/EXTUID_4170286",
-          logo_path: "intel_logo.jpg",
-          duration: "Nov 2018 - Dec 2018",
-          location: "Work From Home",
-          description:
-            "This is financial Solution Company. I have made Supervised Learning model for the company which can perform time series analysis on Stock price data for 32 companies. I have built LSTM Neural Networks Model and trained the data of 32 companies for last 2 years. This model is also used for forecasting.",
-          color: "#0071C5",
+            "Mentorship: Supported 50+ students in engineering courses, helping them troubleshoot coding assignments in Python and MATLAB and theoretical concepts.",
+          color: "#000000",
         },
       ],
     },
     {
-      title: "Hackathon",
+      title: "Internship",
       experiences: [
         {
-          title: "Google Explore ML Facilitator",
-          company: "Google",
-          company_url: "https://about.google/",
-          logo_path: "google_logo.png",
-          duration: "June 2019 - April 2020",
-          location: "Hyderabad, Telangana",
+          title: "Consulting Analyst",
+          company: "Meritco Services",
+          company_url: "#",
+          logo_path: "jiu.png",
+          duration: "Mar 2022 – June 2022",
+          location: "China",
           description:
-            "Explore Machine Learning (ML) is a Google-sponsored program for university students to get started with Machine Learning. The curriculum offers 3 tracks of ML Content (Beginner, Intermediate, Advanced) and relies on university student facilitators to train other students on campus and to build opensource projects under this program.",
-          color: "#4285F4",
-        },
-        {
-          title: "Microsoft Student Partner",
-          company: "Microsoft",
-          company_url: "https://www.microsoft.com/",
-          logo_path: "microsoft_logo.png",
-          duration: "Aug 2019 - May 2020",
-          location: "Hyderabad, Telangana",
-          description:
-            "Microsoft Student Partner is a program for university students to lead the awareness and use of Cloud especially Azure tools in the development of their projects and startups. Under this program, I have organised hands on workshops and seminars to teach Cloud Computing concepts to students.",
-          color: "#D83B01",
-        },
-        {
-          title: "Mozilla Campus Captain",
-          company: "Mozilla",
-          company_url: "https://www.mozilla.org/",
-          logo_path: "mozilla_logo.png",
-          duration: "Oct 2019 - May 2020",
-          location: "Kurnool, Andhra Pradesh",
-          description:
-            "My responsibility for this program was to create opensource environment in college and in the city. We have organised multiple hackathons on the problems collected by ordinary people from Kurnool city. We have build opensource community of our own college. The community is available at dsc_iiitdmk on github.",
+            "Tech-Sector Strategy: Conducted primary and secondary research for high-growth Technology & Internet clients, processing complex datasets to support strategic decision-making.\n\nData-Driven Insights: Synthesized large-scale industry data and literature reviews into actionable executive presentations, identifying key market trends and competitive advantages.\n\nDecision Optimization: Improved project delivery efficiency by translating qualitative findings into structured frameworks, facilitating data-backed pivots in team strategy.",
           color: "#000000",
-        },
-        {
-          title: "Developer Students Club Member",
-          company: "DSC IIITDM Kurnool",
-          company_url:
-            "https://www.linkedin.com/company/developer-students-club-iiitdm-kurnool",
-          logo_path: "dsc_logo.png",
-          duration: "Jan 2018 - May 2020",
-          location: "Kurnool, Andhra Pradesh",
-          description:
-            "We have well established developer club in college which is directly associated with Google Developers. We have developed many interdisciplinary projects under the membership of this club. We have organised workshops and activities on Android Application Development, Flutter and React JS.",
-          color: "#0C9D58",
-        },
-        {
-          title: "Developer Program Member",
-          company: "Github",
-          company_url: "https://github.com/",
-          logo_path: "github_logo.png",
-          duration: "July 2019 - PRESENT",
-          location: "Work From Home",
-          description:
-            "I am actively contributing to many opensource projects. I have contributed to projects of organisations like Tensorflow, Uber, Facebook, Google, Scikit-learn, Kiwix, Sympy, Python, NVLabs, Fossasia, Netrack, Keras etc. These contributions include bug fixes, feature requests and formulating proper documentation for project.",
-          color: "#181717",
         },
       ],
     },
@@ -741,30 +669,48 @@ const contactPageData = {
   },
 };
 
-// What I Do — Technical Stack (homepage)
+// What I Do — Technical Stack (homepage). Row1: AI/ML; Row2 left=Tools, right=MLOps, below=Programming.
 const technicalStack = {
   categories: [
     {
-      title: "AI/ML Frameworks",
+      title: "AI/ML Stack",
       subsections: [
         {
-          label: "Training & Fine-tuning",
+          label: "Frameworks & Training",
           items: ["PyTorch", "TensorFlow", "CUDA", "Jupyter Notebooks"],
         },
         {
-          label: "LLMs & Models",
-          items: ["Llama", "Anthropic Claude", "OpenAI", "Hugging Face"],
-        },
-        {
-          label: "Agent Frameworks",
+          label: "LLMs & APIs",
           items: [
             "LangChain",
+            "LangGraph",
+            "OpenAI API",
+            "FAISS",
+            "Hugging Face",
             "RAG",
-            "CrewAI",
             "OpenAI SDK",
-            "Autogen",
-            "Google ADK",
           ],
+        },
+        {
+          label: "Data & Libraries",
+          items: ["Scikit-learn", "Pandas", "NumPy", "Matplotlib"],
+        },
+      ],
+    },
+    {
+      title: "Tools & Development",
+      subsections: [
+        {
+          label: "APIs & Backend",
+          items: ["Fast API", "REST API"],
+        },
+        {
+          label: "Frontend & UI",
+          items: ["React", "HTML/CSS", "Streamlit"],
+        },
+        {
+          label: "Other Tools & Practices",
+          items: ["OpenCV", "SDLC", "Agile"],
         },
       ],
     },
@@ -773,49 +719,60 @@ const technicalStack = {
       subsections: [
         {
           label: "Cloud Platforms",
-          items: ["AWS", "Azure", "GCP"],
+          items: ["AWS"],
         },
         {
-          label: "AWS Services",
-          items: [
-            "API Gateway",
-            "AWS Lambda",
-            "SageMaker",
-            "Bedrock",
-            "S3",
-            "ECR",
-            "EC2",
-            "App Runner",
-            "SQS",
-            "CloudFront",
-            "Aurora",
-            "RDS",
-          ],
-        },
-        {
-          label: "Monitoring & Observability",
-          items: ["AWS CloudWatch", "Langfuse"],
-          description:
-            "Experience with model performance monitoring, data drift detection, and observability tools.",
+          label: "DevOps & Infra",
+          items: ["Docker", "CI/CD", "Git", "Linux"],
         },
       ],
     },
     {
-      title: "Frontend Development",
+      title: "Programming",
       subsections: [
         {
           label: null,
-          items: ["React", "JavaScript", "TypeScript"],
+          items: [
+            "Python",
+            "C",
+            "C++",
+            "Rust",
+            "SQL",
+            "MATLAB",
+            "JavaScript",
+            "TypeScript",
+          ],
         },
       ],
     },
   ],
 };
 
-// What I Do — Education summary (homepage)
+// What I Do — Education (homepage)
 const whatIDoEducation = {
-  summary:
-    "Background in Computer Science and AI/ML. Focus on building scalable ML systems and agentic applications.",
+  entries: [
+    {
+      school: "Brown University",
+      period: "Sept 2024 – May 2026",
+      degree: "M.S. in Electrical and Computer Engineering",
+      gpa: "GPA: 4.0 / 4.0",
+      highlights: [
+        'Harvard University Exchange Scholar: Selected for cross-registration in "Startups from Idea to Exit" (ENG-SCI 30): Analyzed product-market fit and exit strategies for early-stage tech ventures.',
+        "Technical Coursework: Machine Learning, Reintegrating AI, Computer Vision, Coordinated Mobile Robotics, 3D Photography Systems",
+        "Interdisciplinary Studies: Engaged in Geopolitics and Capitalism in Europe, developing a macro-perspective on global market structures and regulatory environments.",
+      ],
+    },
+    {
+      school: "Soochow University",
+      period: "Sept 2020 – June 2024",
+      degree: "B.E. in Measurement, Control Technology and Instrument",
+      gpa: "GPA: 3.7 / 4.0",
+      highlights: [
+        "Honors: MCM Honorable Mention (2023), National EDA(Electronic Design Automation) Competition 2nd Prize (2023).",
+        "Focus: Precision engineering and signal processing, providing the hardware-level intuition for high-fidelity AI applications.",
+      ],
+    },
+  ],
 };
 
 // What I Do — Personal introduction (homepage)

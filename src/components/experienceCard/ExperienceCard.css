@@ -197,11 +197,28 @@
 .experience-card-description {
   margin-top: 8px;
   margin-left: 10px;
-  text-align: justify;
   margin-right: 20px;
   font-family: var(--font-body);
-  font-size: 0.95rem;
-  line-height: 1.55;
+  font-size: 0.85rem;
+  line-height: 1.28;
+  text-align: left;
+  word-spacing: normal;
+  white-space: pre-line;
+}
+
+.experience-card-links {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  margin: 0;
+}
+
+.experience-card-link {
+  color: #0969da;
+  text-decoration: none;
+}
+
+.experience-card-link:hover {
+  text-decoration: underline;
 }
 
 .experience-card-company > a {
@@ -344,6 +361,5 @@
   .experience-card-description {
     margin-left: 14px;
     margin-right: 14px;
-    text-align: justify;
   }
 }
