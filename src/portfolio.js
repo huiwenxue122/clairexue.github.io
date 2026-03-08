@@ -13,19 +13,18 @@ const seo = {
   og: {
     title: "Claire Xue Portfolio",
     type: "website",
-    url: "http://ashutoshhathidara.com/",
+    url: "clairexue.me",
   },
 };
 
 //Home Page
 const greeting = {
   title: "Claire Xue",
-  logo_name: "AshutoshHathidara",
-  nickname: "layman_brother",
-  subTitle:
-    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+  logo_name: "Claire Xue",
+  nickname: "Huiwen Xue",
+  subTitle: "Building the future, one commit at a time.",
   resumeLink:
-    "https://drive.google.com/file/d/1bXRknv_h-XI_3CQ3SGPteGODtvEb7YvI/view?usp=sharing",
+    "https://drive.google.com/file/d/1W1Zn_GglEhYV1myTyAi8NtoGWXSfFEq3/view?usp=drive_link",
   portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
   githubProfile: "https://github.com/ashutosh1919",
 };
