@@ -44,29 +44,42 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+:root {
+  --scrollbar-color: #c9c6c1;
+  --font-heading: "Cormorant Garamond", Georgia, serif;
+  --font-body: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  --color-text: #1a1d29;
+  --color-muted: #5c6174;
+  --color-accent: #6b5b4f;
+}
+
 html,
 body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
 body {
   margin: 0;
-  font: 19px / 23px Montserrat, "Montserrat", sans-serif;
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.01em;
 }
+
 /* Media Query */
 @media (max-width: 1380px) {
   html,
   body {
     font-size: 16px;
-    line-height: normal;
   }
 }
 
-:root {
-  --scrollbar-color: white; /* it will change when the page loads*/
-}
 * {
   scrollbar-width: thin;
   scrollbar-color: var(--scrollbar-color) transparent;

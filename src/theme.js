@@ -195,4 +195,19 @@ export const materialTealTheme = {
   splashBg: "#05505E",
 };
 
-export const chosenTheme = blueTheme;
+// Elegant B2B / Fintech / Legaltech theme — refined, trustworthy, premium
+export const elegantFintechTheme = {
+  body: "#FAF9F7",
+  text: "#1A1D29",
+  expTxtColor: "#1A1D29",
+  highlight: "#E8E6E3",
+  dark: "#0F1219",
+  secondaryText: "#5C6174",
+  imageHighlight: "#9B8B6F",
+  compImgHighlight: "#E8E6E3",
+  jacketColor: "#6B5B4F",
+  headerColor: "rgba(27, 31, 41, 0.06)",
+  splashBg: "#F0EEEA",
+};
+
+export const chosenTheme = elegantFintechTheme;

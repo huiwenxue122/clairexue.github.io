@@ -60,52 +60,64 @@
   height: auto;
 }
 
+.address-cover-img {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(26, 29, 41, 0.12);
+}
+
 .blog-heading-img-div > * {
   max-width: 100%;
   height: auto;
 }
 
 .contact-heading-text {
-  font-size: 56px;
-  font-weight: 400;
-  font-family: "Google Sans Medium";
-  line-height: 1.1;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-weight: 600;
+  font-family: var(--font-heading);
+  line-height: 1.2;
   text-align: center;
   margin-top: 60px;
+  letter-spacing: 0.02em;
 }
 
 .blog-heading-text {
-  font-size: 56px;
-  font-weight: 400;
-  font-family: "Google Sans Medium";
-  line-height: 1.1;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-weight: 600;
+  font-family: var(--font-heading);
+  line-height: 1.2;
   text-align: center;
   margin-top: 40px;
+  letter-spacing: 0.02em;
 }
 
 .address-heading-text {
-  font-size: 30px;
-  font-family: "Google Sans Regular";
+  font-size: 1.25rem;
+  font-family: var(--font-body);
   text-align: center;
   margin-bottom: 10px;
+  color: var(--color-muted);
 }
 
 .contact-header-detail-text {
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: 0px;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  margin-top: 0;
   margin-left: 20px;
   margin-right: 20px;
-  font-family: "Google Sans Medium";
+  font-family: var(--font-body);
 }
 
 .blog-header-detail-text {
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: 0px;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  margin-top: 0;
   margin-left: 20px;
   margin-right: 20px;
-  font-family: "Google Sans Medium";
+  font-family: var(--font-body);
 }
 
 .resume-btn-div {

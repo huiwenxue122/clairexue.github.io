@@ -1,43 +1,45 @@
 .main-button {
-  background-color: #55198b;
-  border: solid 1px #55198b;
-  color: white;
+  background-color: #1a1d29;
+  border: 1px solid #1a1d29;
+  color: #faf9f7;
   font-weight: 500;
-  line-height: 1.1;
+  line-height: 1.2;
   width: max-content;
-  padding: 13px 22px;
-  margin-right: 0px;
-  /* text-transform: uppercase; */
-  border-radius: 6px;
+  padding: 14px 28px;
+  margin-right: 0;
+  border-radius: 4px;
   text-align: center;
   text-decoration: none;
-  font-family: "Google Sans Regular";
-  display: block;
+  font-family: var(--font-body);
+  display: inline-block;
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 0.95rem;
   cursor: pointer;
-  letter-spacing: 2px;
+  letter-spacing: 0.06em;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
 }
+
 .main-button:hover {
-  /* background-color: #ffffff; */
-  /* color: black; */
-  transition: ease-in 0.3s;
+  background-color: #2d3142;
+  border-color: #2d3142;
+  color: #faf9f7;
 }
+
 .project-button {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 28px;
 }
-/* Media Query */
+
 @media (max-width: 768px) {
   .main-button {
-    font-size: 15px;
-    padding: 12px 18px;
-    margin-right: 0px;
+    font-size: 0.9rem;
+    padding: 12px 22px;
   }
 }
+
 @media (max-width: 320px) {
   .main-button {
-    font-size: 12px;
+    font-size: 0.85rem;
   }
 }

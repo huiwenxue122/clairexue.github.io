@@ -21,65 +21,38 @@ const seo = {
 const greeting = {
   title: "Claire Xue",
   logo_name: "Claire Xue",
-  nickname: "Huiwen Xue",
+  nickname: "Huiwen惠文 Xue薛",
   subTitle: "Building the future, one commit at a time.",
   resumeLink:
     "https://drive.google.com/file/d/1W1Zn_GglEhYV1myTyAi8NtoGWXSfFEq3/view?usp=drive_link",
-  portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
-  githubProfile: "https://github.com/ashutosh1919",
+  portfolio_repository: "https://github.com/huiwenxue122",
+  githubProfile: "https://github.com/huiwenxue122",
 };
 
 const socialMediaLinks = [
-  /* Your Social Media Link */
-  // github: "https://github.com/ashutosh1919",
-  // linkedin: "https://www.linkedin.com/in/ashutosh-hathidara-88710b138/",
-  // gmail: "ashutoshhathidara98@gmail.com",
-  // gitlab: "https://gitlab.com/ashutoshhathidara98",
-  // facebook: "https://www.facebook.com/laymanbrother.19/",
-  // twitter: "https://twitter.com/ashutosh_1919",
-  // instagram: "https://www.instagram.com/layman_brother/"
-
   {
     name: "Github",
-    link: "https://github.com/ashutosh1919",
-    fontAwesomeIcon: "fa-github", // Reference https://fontawesome.com/icons/github?style=brands
-    backgroundColor: "#181717", // Reference https://simpleicons.org/?q=github
+    link: "https://github.com/huiwenxue122",
+    fontAwesomeIcon: "fa-github",
+    backgroundColor: "#181717",
   },
   {
     name: "LinkedIn",
-    link: "https://www.linkedin.com/in/ashutosh1919/",
-    fontAwesomeIcon: "fa-linkedin-in", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
-    backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
-  },
-  {
-    name: "YouTube",
-    link: "https://youtube.com/c/DevSense19",
-    fontAwesomeIcon: "fa-youtube", // Reference https://fontawesome.com/icons/youtube?style=brands
-    backgroundColor: "#FF0000", // Reference https://simpleicons.org/?q=youtube
+    link: "https://www.linkedin.com/in/claire22",
+    fontAwesomeIcon: "fa-linkedin-in",
+    backgroundColor: "#0077B5",
   },
   {
     name: "Gmail",
-    link: "mailto:ashutoshhathidara98@gmail.com",
-    fontAwesomeIcon: "fa-google", // Reference https://fontawesome.com/icons/google?style=brands
-    backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
-  },
-  {
-    name: "X-Twitter",
-    link: "https://twitter.com/ashutosh_1919",
-    fontAwesomeIcon: "fa-x-twitter", // Reference https://fontawesome.com/icons/x-twitter?f=brands&s=solid
-    backgroundColor: "#000000", // Reference https://simpleicons.org/?q=x
-  },
-  {
-    name: "Facebook",
-    link: "https://www.facebook.com/laymanbrother.19/",
-    fontAwesomeIcon: "fa-facebook-f", // Reference https://fontawesome.com/icons/facebook-f?style=brands
-    backgroundColor: "#1877F2", // Reference https://simpleicons.org/?q=facebook
+    link: "mailto:clairexuework@gmail.com",
+    fontAwesomeIcon: "fa-google",
+    backgroundColor: "#D14836",
   },
   {
     name: "Instagram",
-    link: "https://www.instagram.com/layman_brother/",
-    fontAwesomeIcon: "fa-instagram", // Reference https://fontawesome.com/icons/instagram?style=brands
-    backgroundColor: "#E4405F", // Reference https://simpleicons.org/?q=instagram
+    link: "https://www.instagram.com/clairebear012202/",
+    fontAwesomeIcon: "fa-instagram",
+    backgroundColor: "#E4405F",
   },
 ];
 
@@ -523,7 +496,7 @@ const certifications = {
 // Experience Page
 const experience = {
   title: "Experience",
-  subtitle: "Work, Internship and Volunteership",
+  subtitle: "Work, Research Experience and Hackathon",
   description:
     "I have worked with many evolving startups as ML and DL Developer, Designer and Software Architect. I have also worked with some well established companies mostly as AI Developer. I love organising events and that is why I am also involved with many opensource communities as a representative.",
   header_image_path: "experience.svg",
@@ -579,7 +552,7 @@ const experience = {
       ],
     },
     {
-      title: "Internships",
+      title: "Research Experience",
       experiences: [
         {
           title: "Machine Learning Intern",
@@ -618,7 +591,7 @@ const experience = {
       ],
     },
     {
-      title: "Volunteerships",
+      title: "Hackathon",
       experiences: [
         {
           title: "Google Explore ML Facilitator",
@@ -725,7 +698,7 @@ const publications = {
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "animated_ashutosh.png",
+    profile_image_path: "Profile.JPG",
     description:
       "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with ML, AI, React, Android, Cloud and Opensource Development.",
   },
@@ -738,19 +711,103 @@ const contactPageData = {
   },
   addressSection: {
     title: "Address",
-    subtitle: "Saratoga Ave, San Jose, CA, USA 95129",
-    locality: "San Jose",
+    subtitle: "Los Angeles, CA / Boston, Massachusetts",
+    locality: "Los Angeles",
     country: "USA",
     region: "California",
-    postalCode: "95129",
-    streetAddress: "Saratoga Avenue",
+    postalCode: "",
+    streetAddress: "",
     avatar_image_path: "address_image.svg",
-    location_map_link: "https://maps.app.goo.gl/NvYZqa34Wye4tpS17",
+    location_map_link: "https://www.google.com/maps/search/Los+Angeles+CA",
   },
   phoneSection: {
     title: "",
     subtitle: "",
   },
+};
+
+// What I Do — Technical Stack (homepage)
+const technicalStack = {
+  categories: [
+    {
+      title: "AI/ML Frameworks",
+      subsections: [
+        {
+          label: "Training & Fine-tuning",
+          items: ["PyTorch", "TensorFlow", "CUDA", "Jupyter Notebooks"],
+        },
+        {
+          label: "LLMs & Models",
+          items: ["Llama", "Anthropic Claude", "OpenAI", "Hugging Face"],
+        },
+        {
+          label: "Agent Frameworks",
+          items: [
+            "LangChain",
+            "RAG",
+            "CrewAI",
+            "OpenAI SDK",
+            "Autogen",
+            "Google ADK",
+          ],
+        },
+      ],
+    },
+    {
+      title: "MLOps & Cloud",
+      subsections: [
+        {
+          label: "Cloud Platforms",
+          items: ["AWS", "Azure", "GCP"],
+        },
+        {
+          label: "AWS Services",
+          items: [
+            "API Gateway",
+            "AWS Lambda",
+            "SageMaker",
+            "Bedrock",
+            "S3",
+            "ECR",
+            "EC2",
+            "App Runner",
+            "SQS",
+            "CloudFront",
+            "Aurora",
+            "RDS",
+          ],
+        },
+        {
+          label: "Monitoring & Observability",
+          items: ["AWS CloudWatch", "Langfuse"],
+          description:
+            "Experience with model performance monitoring, data drift detection, and observability tools.",
+        },
+      ],
+    },
+    {
+      title: "Frontend Development",
+      subsections: [
+        {
+          label: null,
+          items: ["React", "JavaScript", "TypeScript"],
+        },
+      ],
+    },
+  ],
+};
+
+// What I Do — Education summary (homepage)
+const whatIDoEducation = {
+  summary:
+    "Background in Computer Science and AI/ML. Focus on building scalable ML systems and agentic applications.",
+};
+
+// What I Do — Personal introduction (homepage)
+const personalIntro = {
+  title: "A bit about me",
+  content:
+    "Music: I play guitar and Guzheng (古筝). I enjoy calligraphy and learning languages — I speak Chinese and English, and I'm currently learning French.",
 };
 
 export {
@@ -767,4 +824,7 @@ export {
   publicationsHeader,
   publications,
   contactPageData,
+  technicalStack,
+  whatIDoEducation,
+  personalIntro,
 };

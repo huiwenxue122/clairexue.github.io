@@ -22,11 +22,15 @@
 }
 
 .heading {
-  color: black;
+  font-family: var(--font-heading);
+  color: var(--color-text);
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
 .subTitle {
-  color: #868e96;
+  color: var(--color-muted);
+  font-weight: 400;
 }
 
 /* Animations */
