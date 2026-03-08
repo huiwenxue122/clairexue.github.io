@@ -15,11 +15,21 @@ class ExperienceCard extends Component {
       >
         <Fade left duration={2000} distance="40px">
           <div className="experience-card-logo-div">
-            <img
-              className="experience-card-logo"
-              src={require(`../../assets/images/${experience["logo_path"]}`)}
-              alt=""
-            />
+            {(() => {
+              try {
+                const src = require(`../../assets/images/${experience["logo_path"]}`);
+                return (
+                  <img className="experience-card-logo" src={src} alt="" />
+                );
+              } catch (e) {
+                return (
+                  <div
+                    className="experience-card-logo"
+                    style={{ minWidth: 48, minHeight: 48 }}
+                  />
+                );
+              }
+            })()}
           </div>
         </Fade>
         <div className="experience-card-stepper">

@@ -153,10 +153,14 @@ class Experience extends Component {
           <Fade bottom duration={2000} distance="40px">
             <div className="experience-heading-div">
               <div className="experience-heading-img-div">
-                <img
-                  src={require(`../../assets/images/${experience["header_image_path"]}`)}
-                  alt="Experience"
-                />
+                {(() => {
+                  try {
+                    const src = require(`../../assets/images/${experience["header_image_path"]}`);
+                    return <img src={src} alt="Experience" />;
+                  } catch (e) {
+                    return null;
+                  }
+                })()}
               </div>
               <div className="experience-heading-text-div">
                 <h1
@@ -165,18 +169,22 @@ class Experience extends Component {
                 >
                   {experience.title}
                 </h1>
-                <h3
-                  className="experience-heading-sub-text"
-                  style={{ color: theme.text }}
-                >
-                  {experience["subtitle"]}
-                </h3>
-                <p
-                  className="experience-header-detail-text subTitle"
-                  style={{ color: theme.secondaryText }}
-                >
-                  {experience["description"]}
-                </p>
+                {experience["subtitle"] && (
+                  <h3
+                    className="experience-heading-sub-text"
+                    style={{ color: theme.text }}
+                  >
+                    {experience["subtitle"]}
+                  </h3>
+                )}
+                {experience["description"] && (
+                  <p
+                    className="experience-header-detail-text subTitle"
+                    style={{ color: theme.secondaryText }}
+                  >
+                    {experience["description"]}
+                  </p>
+                )}
               </div>
             </div>
           </Fade>

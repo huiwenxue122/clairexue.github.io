@@ -6,10 +6,13 @@ import { Accordion, Panel } from "baseui/accordion";
 class ExperienceAccordion extends Component {
   render() {
     const theme = this.props.theme;
+    const sections = Array.isArray(this.props.sections)
+      ? this.props.sections
+      : [];
     return (
       <div className="experience-accord">
         <Accordion>
-          {this.props.sections.map((section) => {
+          {sections.map((section) => {
             return (
               <Panel
                 className="accord-panel"
@@ -37,11 +40,20 @@ class ExperienceAccordion extends Component {
                   },
                 }}
               >
-{section["experiences"].map((experience,index) => {
-                  return (
-                    <ExperienceCard index={index} totalCards={section["experiences"].length} experience={experience} theme={theme} />
-                  );
-                })}
+                {(() => {
+                  const experiences = Array.isArray(section["experiences"])
+                    ? section["experiences"]
+                    : [];
+                  return experiences.map((experience, index) => (
+                    <ExperienceCard
+                      key={experience.title + index}
+                      index={index}
+                      totalCards={experiences.length}
+                      experience={experience}
+                      theme={theme}
+                    />
+                  ));
+                })()}
               </Panel>
             );
           })}

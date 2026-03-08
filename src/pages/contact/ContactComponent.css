@@ -60,8 +60,18 @@
   height: auto;
 }
 
+/* Balance both Contact Me images to the same size */
+.contact-profile-img {
+  max-width: 360px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(26, 29, 41, 0.12);
+}
+
 .address-cover-img {
-  max-width: 320px;
+  max-width: 360px;
   width: 100%;
   height: auto;
   object-fit: cover;
