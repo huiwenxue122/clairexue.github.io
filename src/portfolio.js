@@ -498,9 +498,10 @@ const certifications = {
 // Experience Page
 const experience = {
   title: "Experience",
-  subtitle: "Hackathon, Research & Internship",
+  /* subtitle: "Hackathon, Research & Internship",
   description:
     "Highlights from hackathons, research at Brown, and industry experience.",
+  */
   header_image_path: "hackthon.jpg",
   sections: [
     {
@@ -641,7 +642,7 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "Profile.JPG",
     description:
-      "I am available on almost every social media. You can message me, I will reply within 24 hours.",
+      "I am available on every social media. \nI will reply your message within 24 hours.\nMy email is clairexuework@gmail.com.",
   },
   blogSection: {
     title: "Blogs",
