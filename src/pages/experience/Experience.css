@@ -3,9 +3,10 @@
 }
 
 .basic-experience {
-  margin-left: 8%;
-  margin-right: 8%;
-  max-width: 84%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 24px;
   width: 100%;
 }
 
