@@ -7,6 +7,11 @@ import "./Experience.css";
 import { experience } from "../../portfolio.js";
 import { Fade } from "react-reveal";
 
+// Static imports so webpack bundles images in production
+const EXPERIENCE_HEADER_IMAGES = {
+  "hackthon.jpg": require("../../assets/images/hackthon.jpg"),
+};
+
 // const experience = {
 // 	title: "Experience",
 // 	subtitle: "Work, Internship and Volunteership",
@@ -153,14 +158,14 @@ class Experience extends Component {
           <Fade bottom duration={2000} distance="40px">
             <div className="experience-heading-div">
               <div className="experience-heading-img-div">
-                {(() => {
-                  try {
-                    const src = require(`../../assets/images/${experience["header_image_path"]}`);
-                    return <img src={src} alt="Experience" />;
-                  } catch (e) {
-                    return null;
-                  }
-                })()}
+                {EXPERIENCE_HEADER_IMAGES[experience["header_image_path"]] && (
+                  <img
+                    src={
+                      EXPERIENCE_HEADER_IMAGES[experience["header_image_path"]]
+                    }
+                    alt="Experience"
+                  />
+                )}
               </div>
               <div className="experience-heading-text-div">
                 <h1

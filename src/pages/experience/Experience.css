@@ -3,8 +3,10 @@
 }
 
 .basic-experience {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
+  max-width: 96%;
+  width: 100%;
 }
 
 .experience-heading-div {

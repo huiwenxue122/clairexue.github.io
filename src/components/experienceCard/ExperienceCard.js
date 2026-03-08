@@ -2,12 +2,23 @@ import React, { Component } from "react";
 import "./ExperienceCard.css";
 import { Fade } from "react-reveal";
 
+// Static imports so webpack bundles logos in production
+const EXPERIENCE_LOGOS = {
+  "ste.png": require("../../assets/images/ste.png"),
+  "lablab.png": require("../../assets/images/lablab.png"),
+  "brown.png": require("../../assets/images/brown.png"),
+  "jiu.png": require("../../assets/images/jiu.png"),
+};
+
 class ExperienceCard extends Component {
   render() {
     const experience = this.props.experience;
     const index = this.props.index;
     const totalCards = this.props.totalCards;
     const theme = this.props.theme;
+    const logoSrc = experience["logo_path"]
+      ? EXPERIENCE_LOGOS[experience["logo_path"]]
+      : null;
     return (
       <div
         className="experience-list-item"
@@ -15,21 +26,14 @@ class ExperienceCard extends Component {
       >
         <Fade left duration={2000} distance="40px">
           <div className="experience-card-logo-div">
-            {(() => {
-              try {
-                const src = require(`../../assets/images/${experience["logo_path"]}`);
-                return (
-                  <img className="experience-card-logo" src={src} alt="" />
-                );
-              } catch (e) {
-                return (
-                  <div
-                    className="experience-card-logo"
-                    style={{ minWidth: 48, minHeight: 48 }}
-                  />
-                );
-              }
-            })()}
+            {logoSrc ? (
+              <img className="experience-card-logo" src={logoSrc} alt="" />
+            ) : (
+              <div
+                className="experience-card-logo"
+                style={{ minWidth: 48, minHeight: 48 }}
+              />
+            )}
           </div>
         </Fade>
         <div className="experience-card-stepper">
