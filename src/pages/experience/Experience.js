@@ -152,57 +152,61 @@ class Experience extends Component {
   render() {
     const theme = this.props.theme;
     return (
-      <div className="experience-main">
+      <div className="experience-main" style={{ width: "100%" }}>
         <Header theme={theme} />
-        <div className="basic-experience">
-          <div className="experience-content-wrap">
-            <Fade bottom duration={2000} distance="40px">
-              <div className="experience-heading-div">
-                <div className="experience-heading-img-div">
-                  {EXPERIENCE_HEADER_IMAGES[
-                    experience["header_image_path"]
-                  ] && (
-                    <img
-                      src={
-                        EXPERIENCE_HEADER_IMAGES[
-                          experience["header_image_path"]
-                        ]
-                      }
-                      alt="Experience"
-                    />
-                  )}
-                </div>
-                <div className="experience-heading-text-div">
-                  <h1
-                    className="experience-heading-text"
+        <div
+          className="experience-page-content"
+          style={{
+            width: "100%",
+            maxWidth: 1200,
+            marginLeft: "auto",
+            marginRight: "auto",
+            padding: "0 24px",
+            boxSizing: "border-box",
+          }}
+        >
+          <Fade bottom duration={2000} distance="40px">
+            <div className="experience-heading-div">
+              <div className="experience-heading-img-div">
+                {EXPERIENCE_HEADER_IMAGES[experience["header_image_path"]] && (
+                  <img
+                    src={
+                      EXPERIENCE_HEADER_IMAGES[experience["header_image_path"]]
+                    }
+                    alt="Experience"
+                  />
+                )}
+              </div>
+              <div className="experience-heading-text-div">
+                <h1
+                  className="experience-heading-text"
+                  style={{ color: theme.text }}
+                >
+                  {experience.title}
+                </h1>
+                {experience["subtitle"] && (
+                  <h3
+                    className="experience-heading-sub-text"
                     style={{ color: theme.text }}
                   >
-                    {experience.title}
-                  </h1>
-                  {experience["subtitle"] && (
-                    <h3
-                      className="experience-heading-sub-text"
-                      style={{ color: theme.text }}
-                    >
-                      {experience["subtitle"]}
-                    </h3>
-                  )}
-                  {experience["description"] && (
-                    <p
-                      className="experience-header-detail-text subTitle"
-                      style={{ color: theme.secondaryText }}
-                    >
-                      {experience["description"]}
-                    </p>
-                  )}
-                </div>
+                    {experience["subtitle"]}
+                  </h3>
+                )}
+                {experience["description"] && (
+                  <p
+                    className="experience-header-detail-text subTitle"
+                    style={{ color: theme.secondaryText }}
+                  >
+                    {experience["description"]}
+                  </p>
+                )}
               </div>
-            </Fade>
-            <ExperienceAccordion
-              sections={experience["sections"]}
-              theme={theme}
-            />
-          </div>
+            </div>
+          </Fade>
+          <ExperienceAccordion
+            sections={experience["sections"]}
+            theme={theme}
+          />
         </div>
         <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
         <TopButton theme={this.props.theme} />

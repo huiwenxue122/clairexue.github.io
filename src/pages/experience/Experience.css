@@ -2,18 +2,14 @@
   width: 100%;
 }
 
-/* 与 Projects 页一致：外框 margin 5%，内容区 max-width 1200px */
-.basic-experience {
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-.experience-content-wrap {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 24px;
-  box-sizing: border-box;
+/* 唯一类名 + 内联样式已保证宽度，此处仅作后备 */
+.experience-page-content {
+  width: 100% !important;
+  max-width: 1200px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 0 24px !important;
+  box-sizing: border-box !important;
 }
 
 .experience-heading-div {
@@ -35,7 +31,7 @@
 }
 
 .experience-heading-img-div > img {
-  max-width: 280px;
+  max-width: 640px;
   width: 100%;
   height: auto;
   object-fit: cover;

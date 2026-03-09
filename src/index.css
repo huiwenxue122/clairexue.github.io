@@ -61,6 +61,12 @@ body {
   overflow-x: hidden;
 }
 
+/* 保证 #root 占满宽度，避免 body 的 display:flex 导致内容被压窄 */
+#root {
+  width: 100%;
+  min-width: 100%;
+}
+
 body {
   margin: 0;
   font-family: var(--font-body);
