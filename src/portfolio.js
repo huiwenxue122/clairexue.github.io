@@ -683,6 +683,7 @@ const technicalStack = {
           items: [
             "LangChain",
             "LangGraph",
+            "LangSmith",
             "OpenAI API",
             "FAISS",
             "Hugging Face",
@@ -756,9 +757,10 @@ const whatIDoEducation = {
       degree: "M.S. in Electrical and Computer Engineering",
       gpa: "GPA: 4.0 / 4.0",
       highlights: [
-        'Harvard University Exchange Scholar: Selected for cross-registration in "Startups from Idea to Exit" (ENG-SCI 30): Analyzed product-market fit and exit strategies for early-stage tech ventures.',
+        'Harvard University Exchange Scholar: Selected for cross-registration in "Startups from Idea to Exit" (ENG-SCI 30):\n\t\tAnalyzed product-market fit and exit strategies for early-stage tech ventures',
+        "Engineering Representative of Brown University Pre-Law Graduate Society:\n\t\tCoordinated with law firms and legal professionals to organize networking events, panels, and workshops for pre-law students\n\t\tServed as a liaison between engineering students and the pre-law community, promoting interdisciplinary engagement",
         "Technical Coursework: Machine Learning, Reintegrating AI, Computer Vision, Coordinated Mobile Robotics, 3D Photography Systems",
-        "Interdisciplinary Studies: Engaged in Geopolitics and Capitalism in Europe, developing a macro-perspective on global market structures and regulatory environments.",
+        "Audited coursework in geopolitics and European capitalism, focusing on regulatory and market dynamics",
       ],
     },
     {

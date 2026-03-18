@@ -1,8 +1,17 @@
 {
   "data": [
     {
+      "id": "ContractSentineln",
+      "name": "Multi-Agent Legal Risk Review System for Contract Escalation",
+      "createdAt": "2025-01-01T00:00:00Z",
+      "url": "https://github.com/huiwenxue122/ContractSentinel",
+      "description": "ContractSentinel is a LegalTech AI system that models contract review as a policy-driven reasoning workflow rather than a simple chatbot or summarization tool. The system parses contracts into a graph-aware legal structure, runs a multi-agent reasoning pipeline, and produces a structured risk memo with evidence chains to support human legal review. The goal is not to replace lawyers, but to help them identify risk, justify findings, and decide when escalation is required.",
+      "isFork": false,
+      "languages": []
+    },
+    {
       "id": "meetingflowai",
-      "name": "Multi-Agent Sales Automation System",
+      "name": "Agentic AI Sales Automation System",
       "createdAt": "2025-11-01T00:00:00Z",
       "url": "https://github.com/huiwenxue122/MeetingFlowAI",
       "description": "A comprehensive sales automation platform built for the IBM watsonx Orchestrate Hackathon. It uses a multi-agent AI system to automatically process sales meeting transcripts, extract key information, update CRM systems, and generate follow-up communications.",
@@ -20,28 +29,10 @@
     },
     {
       "id": "enterprise-knowledge-qa",
-      "name": "Enterprise Knowledge QA System",
+      "name": "Enterprise Knowledge RAG System",
       "createdAt": "2025-01-01T00:00:00Z",
       "url": "https://github.com/huiwenxue122/Enterprise-Knowledge-QA-System",
-      "description": "An AI-powered document question-answering system that allows users to upload enterprise documents (such as annual reports or policies), and interactively ask questions based on their content.",
-      "isFork": false,
-      "languages": []
-    },
-    {
-      "id": "multi-robot-formation-control",
-      "name": "Multi-Robot Formation Control System",
-      "createdAt": "2025-01-01T00:00:00Z",
-      "url": "https://github.com/huiwenxue122/multi-robot-formation-control",
-      "description": "A comprehensive multi-robot formation control system with natural language interface, featuring collision-free path planning using ORCA (Optimal Reciprocal Collision Avoidance) and an interactive Streamlit web UI.",
-      "isFork": false,
-      "languages": []
-    },
-    {
-      "id": "eeg-bci-target-classification",
-      "name": "EEG Signal Classification",
-      "createdAt": "2025-01-01T00:00:00Z",
-      "url": "https://github.com/huiwenxue122/EEG-BCI-Target-Classification",
-      "description": "The project focuses on detecting the N2pc Event-Related Potential (ERP) from EEG signals to classify whether a visual target appeared on the left or right side of the screen.",
+      "description": "An AI-powered document question-answering system that allows users to upload enterprise documents, and interactively ask questions based on their content. Users can upload one or more PDF documents and ask natural-language questions. Built with Streamlit, LangChain, FAISS, and OpenAI models.",
       "isFork": false,
       "languages": []
     },
@@ -50,7 +41,16 @@
       "name": "Image Restoration",
       "createdAt": "2025-01-01T00:00:00Z",
       "url": "https://github.com/huiwenxue122/DeepImageRestoration",
-      "description": "Image Restoration uses deeping learning techniques like Swin Transformer and efficient decoder.",
+      "description": "This Computer Vision project presents a physics-guided image restoration framework for Dunhuang murals, combining deep learning with material-aware modeling to achieve both visual fidelity and historical authenticity. ",
+      "isFork": false,
+      "languages": []
+    },
+    {
+      "id": "multi-robot-formation-control",
+      "name": "Multi-Agent Formation Control System",
+      "createdAt": "2025-01-01T00:00:00Z",
+      "url": "https://github.com/huiwenxue122/multi-robot-formation-control",
+      "description": "An end-to-end multi-agent control system that enables users to orchestrate complex agent behaviors through natural language. The system is designed as a full-stack AI engineering pipeline, spanning natural language parsing, task decomposition, multi-agent planning, and real-time simulation. ",
       "isFork": false,
       "languages": []
     }

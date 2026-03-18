@@ -77,6 +77,8 @@
 
 .whatido-education-highlights li {
   margin-bottom: 0.4rem;
+  /* Keep \n line breaks AND preserve indentation (spaces / tabs) */
+  white-space: pre-wrap;
 }
 
 .whatido-education-highlights li:last-child {
