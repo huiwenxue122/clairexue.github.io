@@ -10,11 +10,20 @@
       "languages": []
     },
     {
-      "id": "meetingflowai",
-      "name": "Agentic AI Sales Automation System",
-      "createdAt": "2025-11-01T00:00:00Z",
-      "url": "https://github.com/huiwenxue122/MeetingFlowAI",
-      "description": "A comprehensive sales automation platform built for the IBM watsonx Orchestrate Hackathon. It uses a multi-agent AI system to automatically process sales meeting transcripts, extract key information, update CRM systems, and generate follow-up communications.",
+      "id": "interactive-novel-ai-platform",
+      "name": "Interactive Novel AI Platform",
+      "createdAt": "2025-01-01T00:00:00Z",
+      "url": "https://github.com/huiwenxue122/Agent-Orchestrator-for-Interactive-Novel-AI-Platform",
+      "description": "An AI-powered content platform that enables anyone to easily rewrite and continue novels. Through a Context Memory Engine for narrative coherence and an Intelligent Hint Recommendation Algorithm to lower the creative barrier, we deliver an immersive \"IF-Line\" interactive storytelling experience.",
+      "isFork": false,
+      "languages": []
+    },
+    {
+      "id": "nasa-voice-ai-assistant",
+      "name": "Voice-capable mission assistant for NASA",
+      "createdAt": "2025-01-01T00:00:00Z",
+      "url": "https://github.com/huiwenxue122/NASA-voice-AI-Assistant",
+      "description": "A deterministic, safety-oriented EVA-style copilot demo: typed or spoken commands, mock suit telemetry, YAML procedures, guardrails, and a React mission console. No LLM and no cloud speech APIs — local Whisper for speech-to-text and the browser's Web Speech API for read-aloud replies.",
       "isFork": false,
       "languages": []
     },
@@ -37,20 +46,11 @@
       "languages": []
     },
     {
-      "id": "deep-image-restoration",
-      "name": "Image Restoration",
-      "createdAt": "2025-01-01T00:00:00Z",
-      "url": "https://github.com/huiwenxue122/DeepImageRestoration",
-      "description": "This Computer Vision project presents a physics-guided image restoration framework for Dunhuang murals, combining deep learning with material-aware modeling to achieve both visual fidelity and historical authenticity. ",
-      "isFork": false,
-      "languages": []
-    },
-    {
-      "id": "multi-robot-formation-control",
-      "name": "Multi-Agent Formation Control System",
-      "createdAt": "2025-01-01T00:00:00Z",
-      "url": "https://github.com/huiwenxue122/multi-robot-formation-control",
-      "description": "An end-to-end multi-agent control system that enables users to orchestrate complex agent behaviors through natural language. The system is designed as a full-stack AI engineering pipeline, spanning natural language parsing, task decomposition, multi-agent planning, and real-time simulation. ",
+      "id": "meetingflowai",
+      "name": "Agentic AI Sales Automation System",
+      "createdAt": "2025-11-01T00:00:00Z",
+      "url": "https://github.com/huiwenxue122/MeetingFlowAI",
+      "description": "A comprehensive sales automation platform built for the IBM watsonx Orchestrate Hackathon. It uses a multi-agent AI system to automatically process sales meeting transcripts, extract key information, update CRM systems, and generate follow-up communications.",
       "isFork": false,
       "languages": []
     }
