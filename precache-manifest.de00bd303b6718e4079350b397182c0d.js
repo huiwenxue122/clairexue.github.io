@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4ca6063fc437205c6ae8a0cfcc4146a7",
+    "revision": "131e24ea1b8282849844922e919353cc",
     "url": "/index.html"
   },
   {
-    "revision": "01f30744086c6749fc37",
+    "revision": "e26377126d3e3f9c4da6",
     "url": "/static/css/main.546e9578.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.d1ccd0c0.chunk.js"
   },
   {
-    "revision": "01f30744086c6749fc37",
-    "url": "/static/js/main.93ca2c7a.chunk.js"
+    "revision": "e26377126d3e3f9c4da6",
+    "url": "/static/js/main.71ab80dc.chunk.js"
   },
   {
     "revision": "f4163cc1361175add5e6",
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Agustina.21f233e1.woff"
   },
   {
-    "revision": "04ae6a8a8598f9dac95ac615bfcfead9",
-    "url": "/static/media/Claire_Xue_Resume.04ae6a8a.pdf"
+    "revision": "89c87840b6f1cf7ecc549bd7f2bf6130",
+    "url": "/static/media/Claire_Xue_Resume.89c87840.pdf"
   },
   {
     "revision": "4457817ac2b9993c65e81aa05828fe9c",
