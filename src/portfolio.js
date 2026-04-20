@@ -770,7 +770,7 @@ const whatIDoEducation = {
       gpa: "GPA: 3.7 / 4.0",
       highlights: [
         "Honors: MCM Honorable Mention (2023), National EDA (Electronic Design Automation) Competition 2nd Prize (2023).",
-        "Focus: Precision engineering and signal processing, providing the hardware-level intuition for high-fidelity AI applications.",
+        "Focus: Machine Learning, signal processing, deep learning, and natural language processing.",
       ],
     },
   ],

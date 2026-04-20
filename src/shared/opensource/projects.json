@@ -1,11 +1,11 @@
 {
   "data": [
     {
-      "id": "ContractSentineln",
-      "name": "Multi-Agent Legal Risk Review System for Contract Escalation",
+      "id": "redlineai-legal-risk-detector",
+      "name": "RedlineAI: Multi-agent Contract Risk Review System",
       "createdAt": "2025-01-01T00:00:00Z",
-      "url": "https://github.com/huiwenxue122/ContractSentinel",
-      "description": "ContractSentinel is a LegalTech AI system that models contract review as a policy-driven reasoning workflow rather than a simple chatbot or summarization tool. The system parses contracts into a graph-aware legal structure, runs a multi-agent reasoning pipeline, and produces a structured risk memo with evidence chains to support human legal review. The goal is not to replace lawyers, but to help them identify risk, justify findings, and decide when escalation is required.",
+      "url": "https://github.com/huiwenxue122/-RedlineAI-legal-risk-detector-",
+      "description": "RedlineAI helps small SaaS companies review customer contracts before signing.\n\nRedlineAI flags the clauses that can hurt you, explains the risk in plain English, and suggests what to say to the customer's legal team.\n\nThe system models contract review as a policy-driven reasoning workflow. It parses contracts into a graph-aware legal structure, runs a three-agent reasoning pipeline, and produces a structured risk memo with evidence chains.",
       "isFork": false,
       "languages": []
     },
