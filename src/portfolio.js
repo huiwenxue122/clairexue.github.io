@@ -5,15 +5,30 @@ const settings = {
   isSplash: true, // Change this to false if you don't want Splash screen.
 };
 
-//SEO Related settings
+// SEO (also mirrored in public/index.html for crawlers and link previews)
 const seo = {
-  title: "Claire's Portfolio",
+  title: "Claire Xue | AI Engineer Portfolio",
   description:
-    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+    "AI Engineer building agentic AI products, RAG systems, and production-ready ML tools.",
+  author: "Claire Xue",
+  keywords:
+    "Claire Xue, AI Engineer, portfolio, LangGraph, RAG, PyTorch, machine learning, agentic AI",
+  siteUrl: "https://clairexue.me",
   og: {
-    title: "Claire Xue Portfolio",
+    title: "Claire Xue | AI Engineer Portfolio",
+    description:
+      "AI Engineer building agentic AI products, RAG systems, and production-ready ML tools.",
     type: "website",
-    url: "clairexue.me",
+    url: "https://clairexue.me/",
+    siteName: "Claire Xue",
+    image: "/og-image.png",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Claire Xue | AI Engineer Portfolio",
+    description:
+      "AI Engineer building agentic AI products, RAG systems, and production-ready ML tools.",
+    image: "/og-image.png",
   },
 };
 
@@ -41,7 +56,7 @@ const socialMediaLinks = [
   },
   {
     name: "LinkedIn",
-    link: "https://www.linkedin.com/in/claire22",
+    link: "https://www.linkedin.com/in/claire22/",
     fontAwesomeIcon: "fa-linkedin-in",
     backgroundColor: "#0077B5",
   },
@@ -300,56 +315,7 @@ const skills = {
 
 // Education Page
 const competitiveSites = {
-  competitiveSites: [
-    {
-      siteName: "LeetCode",
-      iconifyClassname: "simple-icons:leetcode",
-      style: {
-        color: "#F79F1B",
-      },
-      profileLink: "https://leetcode.com/layman_brother/",
-    },
-    {
-      siteName: "HackerRank",
-      iconifyClassname: "simple-icons:hackerrank",
-      style: {
-        color: "#2EC866",
-      },
-      profileLink: "https://www.hackerrank.com/layman_brother",
-    },
-    {
-      siteName: "Codechef",
-      iconifyClassname: "simple-icons:codechef",
-      style: {
-        color: "#5B4638",
-      },
-      profileLink: "https://www.codechef.com/users/ashutosh_1919",
-    },
-    {
-      siteName: "Codeforces",
-      iconifyClassname: "simple-icons:codeforces",
-      style: {
-        color: "#1F8ACB",
-      },
-      profileLink: "http://codeforces.com/profile/layman_brother",
-    },
-    {
-      siteName: "Hackerearth",
-      iconifyClassname: "simple-icons:hackerearth",
-      style: {
-        color: "#323754",
-      },
-      profileLink: "https://www.hackerearth.com/@ashutosh391",
-    },
-    {
-      siteName: "Kaggle",
-      iconifyClassname: "simple-icons:kaggle",
-      style: {
-        color: "#20BEFF",
-      },
-      profileLink: "https://www.kaggle.com/laymanbrother",
-    },
-  ],
+  competitiveSites: [],
 };
 
 const degrees = {
@@ -690,7 +656,7 @@ const contactPageData = {
     title: "Blogs",
     subtitle:
       "I like to document some of my experiences in professional career journey as well as some technical knowledge sharing.",
-    link: "https://blogs.ashutoshhathidara.com/",
+    link: "",
     avatar_image_path: "blogs_image.svg",
   },
   addressSection: {
@@ -708,6 +674,13 @@ const contactPageData = {
     title: "",
     subtitle: "",
   },
+};
+
+/** Blogs route — add entries when you publish posts */
+const blogSection = {
+  title: "Writing",
+  subtitle: "Notes on AI engineering and projects.",
+  blogs: [],
 };
 
 // What I Do — Technical Stack (homepage). Row1: AI/ML; Row2 left=Tools, right=MLOps, below=Programming.
@@ -899,6 +872,7 @@ export {
   publicationsHeader,
   publications,
   contactPageData,
+  blogSection,
   technicalStack,
   whatIDoEducation,
   personalIntro,
