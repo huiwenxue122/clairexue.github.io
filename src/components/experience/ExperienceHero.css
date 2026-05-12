@@ -1,0 +1,115 @@
+.exp-hero {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  padding-top: 0.25rem;
+}
+
+.exp-hero__copy {
+  flex: 1 1 auto;
+  min-width: 0;
+  text-align: left;
+}
+
+.exp-hero__title {
+  margin: 0 0 0.4rem;
+  font-family: var(--font-heading);
+  font-size: clamp(1.85rem, 3.5vw, 2.65rem);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.15;
+}
+
+.exp-hero__subtitle {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1rem, 1.35vw, 1.12rem);
+  font-weight: 500;
+  line-height: 1.45;
+  max-width: 36em;
+}
+
+.exp-hero__tagline {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  max-width: 32em;
+  opacity: 0.95;
+}
+
+.exp-hero__visual {
+  position: relative;
+  flex: 0 0 auto;
+  width: min(100%, 460px);
+  max-width: 56vw;
+}
+
+.exp-hero__glow {
+  position: absolute;
+  inset: -8% -10% -12% -10%;
+  border-radius: 50%;
+  background: radial-gradient(
+    ellipse 70% 65% at 50% 45%,
+    rgba(42, 127, 158, 0.2),
+    transparent 70%
+  );
+  filter: blur(8px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.exp-hero__frame {
+  position: relative;
+  z-index: 1;
+  border-radius: 14px;
+  padding: 5px;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(248, 251, 253, 0.35) 100%
+  );
+  border: 1px solid var(--surface-border);
+  box-shadow: var(--glass-inset), 0 8px 28px rgba(15, 37, 51, 0.08);
+  backdrop-filter: blur(16px) saturate(1.15);
+  -webkit-backdrop-filter: blur(16px) saturate(1.15);
+}
+
+.exp-hero__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 320px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+  .exp-hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1.65rem;
+  }
+
+  .exp-hero__copy {
+    text-align: center;
+  }
+
+  .exp-hero__subtitle,
+  .exp-hero__tagline {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .exp-hero__visual {
+    max-width: min(500px, 96vw);
+    width: 100%;
+  }
+
+  .exp-hero__img {
+    max-height: 340px;
+  }
+}

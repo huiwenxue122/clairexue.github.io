@@ -1,0 +1,45 @@
+.contact-avail {
+  padding: 0.85rem 1rem 0.95rem;
+  border-radius: 14px;
+  margin-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 100%;
+  box-shadow: var(--glass-inset), 0 6px 24px rgba(15, 37, 51, 0.06);
+}
+
+.contact-avail__block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.42rem;
+}
+
+.contact-avail__heading {
+  margin: 0;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  opacity: 0.88;
+}
+
+.contact-avail__pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.32rem 0.4rem;
+}
+
+.contact-avail__pill {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: rgba(15, 37, 51, 0.72);
+  border: 1px solid rgba(15, 37, 51, 0.09);
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(8px);
+  line-height: 1.3;
+}

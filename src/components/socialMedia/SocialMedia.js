@@ -1,17 +1,6 @@
 import React from "react";
 import "./SocialMedia.css";
 import { socialMediaLinks } from "../../portfolio";
-import styled from "styled-components";
-
-const IconWrapper = styled.span`
-  i {
-    background-color: ${(props) => props.backgroundColor};
-  }
-  &:hover i {
-    background-color: ${({ theme }) => theme.text};
-    transition: 0.3s ease-in;
-  }
-`;
 
 export default function socialMedia(props) {
   return (
@@ -23,14 +12,15 @@ export default function socialMedia(props) {
           <a
             key={i}
             href={media.link}
-            className={`icon-button`}
+            className="icon-button"
+            title={media.name}
             target={isMailOrTel ? undefined : "_blank"}
             rel={isMailOrTel ? undefined : "noopener noreferrer"}
           >
-            <IconWrapper {...media} {...props}>
+            <span className="icon-button__glass" aria-hidden>
               <i className={`fab ${media.fontAwesomeIcon}`}></i>
-            </IconWrapper>
-            {/* <span></span> */}
+            </span>
+            <span className="sr-only">{media.name}</span>
           </a>
         );
       })}

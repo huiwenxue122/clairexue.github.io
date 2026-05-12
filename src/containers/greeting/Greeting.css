@@ -12,6 +12,9 @@
   padding: 48px 24px 64px;
   margin: 0px auto;
   margin-top: 2rem;
+  transform: translateY(calc(-1 * var(--parallax-y, 0px)));
+  will-change: transform;
+  transition: transform 0.06s linear;
 }
 
 .gretting-main {
@@ -38,10 +41,10 @@
 .greeting-text {
   margin-top: 80px;
   font-size: clamp(2.5rem, 5vw, 4.25rem);
-  line-height: 1.15;
+  line-height: 1.12;
   font-family: var(--font-heading);
   font-weight: 600;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
 }
 
 .greeting-nickname {
@@ -83,8 +86,17 @@
   max-width: 480px;
   height: auto;
   object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 24px rgba(26, 29, 41, 0.12);
+  border-radius: 14px;
+  border: 1px solid var(--surface-border);
+  box-shadow: var(--shadow-elevated), 0 0 36px rgba(31, 111, 134, 0.1);
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.45s ease, border-color 0.35s ease;
+}
+
+.greeting-image-div:hover .greeting-cover-img {
+  transform: scale(1.02) translateY(-4px);
+  border-color: rgba(31, 111, 134, 0.26);
+  box-shadow: var(--shadow-glow), var(--shadow-hover);
 }
 
 @media (max-width: 1380px) {

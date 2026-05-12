@@ -1,220 +1,139 @@
-.contact-main {
+/* Contact page — premium CTA layout */
+
+.contact-page {
   width: 100%;
+  flex: 1;
 }
 
-.basic-contact {
-  max-width: 1050px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 24px;
+.contact-page__main {
+  width: 92%;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0.35rem 1rem 2.5rem;
   box-sizing: border-box;
+  position: relative;
 }
 
-.contact-heading-div {
-  display: flex;
+.contact-page__main::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -4%;
+  transform: translateX(-50%);
+  width: min(100%, 540px);
+  height: 140px;
+  background: radial-gradient(
+    ellipse 80% 70% at 50% 50%,
+    rgba(42, 127, 158, 0.08),
+    transparent 68%
+  );
+  pointer-events: none;
+  z-index: -1;
 }
 
-.blog-heading-div {
-  display: flex;
+/* Secondary photo — rowing, same glass language as hero portrait */
+.contact-page__accent {
+  position: relative;
+  margin: 1.35rem auto 0;
+  max-width: min(640px, 100%);
+  padding: 0;
 }
 
-.address-heading-div {
-  display: flex;
-  margin-top: 80px;
+.contact-page__accent-glow {
+  position: absolute;
+  inset: -8% -6% -10% -6%;
+  border-radius: 50%;
+  background: radial-gradient(
+    ellipse 70% 65% at 50% 45%,
+    rgba(42, 127, 158, 0.22),
+    rgba(31, 111, 134, 0.1) 50%,
+    transparent 70%
+  );
+  filter: blur(4px);
+  pointer-events: none;
+  z-index: 0;
 }
 
-.blog-heading-div > * {
-  flex: 1;
+.contact-page__accent-glow--layer2 {
+  inset: -10% -8% -12% -8%;
+  background: radial-gradient(
+    ellipse 88% 72% at 42% 50%,
+    rgba(130, 160, 210, 0.16),
+    transparent 58%
+  );
+  opacity: 0.9;
 }
 
-.contact-heading-div > * {
-  flex: 1;
+.contact-page__accent-frame {
+  position: relative;
+  z-index: 1;
+  border-radius: 18px;
+  padding: 7px;
+  background: linear-gradient(
+    160deg,
+    rgba(255, 255, 255, 0.52) 0%,
+    rgba(255, 255, 255, 0.28) 50%,
+    rgba(248, 251, 253, 0.38) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.62);
+  box-shadow: var(--glass-inset), 0 14px 40px rgba(15, 37, 51, 0.09),
+    0 0 0 1px rgba(31, 111, 134, 0.07);
+  backdrop-filter: blur(18px) saturate(1.15);
+  -webkit-backdrop-filter: blur(18px) saturate(1.15);
+  transition: box-shadow 0.35s ease, border-color 0.35s ease;
 }
 
-.address-heading-div > * {
-  flex: 1;
+.contact-page__accent:hover .contact-page__accent-frame {
+  border-color: rgba(31, 111, 134, 0.2);
+  box-shadow: var(--glass-inset), 0 16px 44px rgba(15, 37, 51, 0.1),
+    0 0 48px rgba(42, 127, 158, 0.1), 0 0 0 1px rgba(31, 111, 134, 0.1);
 }
 
-.contact-heading-img-div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.contact-page__accent-viewport {
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  max-height: min(38vh, 360px);
+  background: rgba(248, 250, 252, 0.5);
+  box-shadow: inset 0 0 0 1px rgba(15, 37, 51, 0.05);
 }
 
-.blog-heading-img-div {
-  align-items: center;
-  justify-content: center;
-}
-
-.contact-heading-text-div {
-  text-align: center;
-}
-
-.blog-heading-text-div {
-  text-align: center;
-}
-
-.address-heading-text-div {
-  text-align: center;
-}
-
-.contact-heading-img-div > * {
-  max-width: 100%;
-  height: auto;
-}
-
-/* 第一张图缩小，与下方 Address 图片大小一致，两块视觉平衡 */
-.contact-profile-img {
-  max-width: 320px;
+.contact-page__accent-img {
+  display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 24px rgba(26, 29, 41, 0.12);
+  object-position: center;
 }
 
-.address-cover-img {
-  max-width: 320px;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 24px rgba(26, 29, 41, 0.12);
+.contact-page__more {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(15, 37, 51, 0.07);
+  max-width: 28rem;
 }
 
-.blog-heading-img-div > * {
-  max-width: 100%;
-  height: auto;
-}
-
-.contact-heading-text {
-  font-size: clamp(2rem, 4vw, 3.25rem);
+.contact-page__more-label {
+  margin: 0 0 0.5rem;
+  font-size: 0.72rem;
   font-weight: 600;
-  font-family: var(--font-heading);
-  line-height: 1.2;
-  text-align: center;
-  margin-top: 60px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.85;
 }
 
-.blog-heading-text {
-  font-size: clamp(2rem, 4vw, 3.25rem);
-  font-weight: 600;
-  font-family: var(--font-heading);
-  line-height: 1.2;
-  text-align: center;
-  margin-top: 40px;
-  letter-spacing: 0.02em;
+.contact-page__more .social-media-div {
+  gap: 0.45rem;
 }
 
-.address-heading-text {
-  font-size: 1.25rem;
-  font-family: var(--font-body);
-  text-align: center;
-  margin-bottom: 10px;
-  color: var(--color-muted);
-}
-
-.contact-header-detail-text {
-  font-size: 1.05rem;
-  line-height: 1.65;
-  margin-top: 0;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-family: var(--font-body);
-  white-space: pre-line;
-}
-
-.blog-header-detail-text {
-  font-size: 1.05rem;
-  line-height: 1.65;
-  margin-top: 0;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-family: var(--font-body);
-}
-
-.resume-btn-div {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.blogsite-btn-div {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.address-btn-div {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 0;
-}
-
-@media (max-width: 1380px) {
-  .contact-heading-text {
-    font-size: 50px;
-    margin-top: 60px;
-  }
-
-  .blog-heading-text {
-    font-size: 50px;
-    margin-top: 40px;
-  }
-}
-
-@media (max-width: 768px) {
-  .contact-heading-text {
-    font-size: 30px;
-    margin-top: 0px;
-  }
-
-  .blog-heading-text {
-    font-size: 30px;
-    margin-top: 0px;
-  }
-
-  .address-heading-text {
-    font-size: 20px;
-  }
-
-  .blog-heading-div {
-    flex-direction: column-reverse;
-    margin-top: 60px;
-  }
-
-  .address-heading-div {
-    flex-direction: column;
-    margin-top: 60px;
-  }
-
-  .blog-heading-text-div {
-    margin-top: 40px;
-  }
-
-  .address-heading-text-div {
-    margin-top: 40px;
-  }
-
-  .contact-heading-div {
-    flex-direction: column;
-  }
-
-  .contact-header-detail-text {
-    font-size: 16px;
-    margin-left: 0px;
-    margin-right: 0px;
-    line-height: normal;
+@media (max-width: 800px) {
+  .contact-page__more {
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
   }
 
-  .blog-header-detail-text {
-    font-size: 16px;
-    margin-left: 0px;
-    margin-right: 0px;
-    line-height: normal;
-    text-align: center;
+  .contact-page__more .social-media-div {
+    justify-content: center;
   }
 }

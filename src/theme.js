@@ -210,4 +210,44 @@ export const elegantFintechTheme = {
   splashBg: "#F0EEEA",
 };
 
-export const chosenTheme = elegantFintechTheme;
+/** Deep UI + liquid glass + cool steel accents */
+export const deepGlassCyberTheme = {
+  body: "#06060a",
+  text: "#ececf3",
+  expTxtColor: "#c8c8d4",
+  highlight: "rgba(255, 255, 255, 0.06)",
+  dark: "#020203",
+  secondaryText: "#9b9bad",
+  imageHighlight: "#5b9bd5",
+  compImgHighlight: "rgba(255, 255, 255, 0.08)",
+  jacketColor: "#3d6ea8",
+  headerColor: "rgba(91, 155, 213, 0.2)",
+  splashBg: "#06060a",
+  surfaceBorder: "rgba(255, 255, 255, 0.1)",
+  tagBorder: "rgba(91, 155, 213, 0.28)",
+  tagBg: "rgba(255, 255, 255, 0.04)",
+};
+
+/** Premium AI product — light glass, deep navy / teal / cyan / soft violet */
+export const lightGlassCyberTheme = {
+  body: "#EEF7FA",
+  text: "#0B1F2A",
+  expTxtColor: "#0B1F2A",
+  highlight: "rgba(56, 189, 248, 0.07)",
+  dark: "#0B1F2A",
+  secondaryText: "#5F6F7E",
+  imageHighlight: "#1E7891",
+  compImgHighlight: "rgba(255, 255, 255, 0.96)",
+  jacketColor: "#1E7891",
+  headerColor: "rgba(11, 31, 42, 0.07)",
+  splashBg: "#EEF7FA",
+  surfaceBorder: "rgba(15, 37, 51, 0.12)",
+  tagBorder: "rgba(30, 120, 145, 0.22)",
+  tagBg: "rgba(236, 252, 255, 0.88)",
+  pageBackdrop: `radial-gradient(circle at 80% 10%, rgba(56, 189, 248, 0.18), transparent 32%),
+    radial-gradient(circle at 15% 85%, rgba(139, 92, 246, 0.10), transparent 30%),
+    radial-gradient(ellipse 100% 80% at 48% 45%, rgba(255, 255, 255, 0.65), transparent 58%),
+    linear-gradient(135deg, #F8FCFF 0%, #EEF7FA 45%, #DDECF4 100%)`,
+};
+
+export const chosenTheme = lightGlassCyberTheme;

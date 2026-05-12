@@ -1,122 +1,35 @@
-.experience-main {
+/* Experience page — premium timeline layout */
+
+.experience-main.exp-page {
   width: 100%;
 }
 
-/* 唯一类名 + 内联样式已保证宽度，此处仅作后备 */
-.experience-page-content {
-  width: 100% !important;
-  max-width: 1200px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding: 0 24px !important;
-  box-sizing: border-box !important;
+.exp-page__shell {
+  width: 92%;
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem 2.25rem;
+  box-sizing: border-box;
 }
 
-.experience-heading-div {
-  display: flex;
+/* Match site: subtle top emphasis */
+.exp-page .exp-hero {
+  position: relative;
 }
 
-.experience-heading-div > * {
-  flex: 1;
-}
-
-.experience-heading-img-div {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.experience-heading-text-div {
-  text-align: right;
-}
-
-.experience-heading-img-div > img {
-  max-width: 640px;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.experience-heading-text {
-  font-size: clamp(2rem, 4vw, 3.25rem);
-  font-weight: 600;
-  font-family: var(--font-heading);
-  line-height: 1.2;
-  text-align: right;
-  margin-top: 80px;
-  letter-spacing: 0.02em;
-}
-
-.experience-heading-sub-text {
-  font-size: 1.25rem;
-  font-family: var(--font-body);
-  text-align: right;
-  margin-bottom: 10px;
-  color: var(--color-muted);
-}
-
-.experience-header-detail-text {
-  font-size: 1.05rem;
-  line-height: 1.65;
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: 0;
-  font-family: var(--font-body);
-  max-width: 42em;
-  text-align: right;
-}
-
-@media (max-width: 1380px) {
-  .experience-heading-text {
-    font-size: 50px;
-    margin-top: 80px;
-  }
-  .experience-heading-sub-text {
-    font-size: 25px;
-  }
-}
-
-@media (max-width: 768px) {
-  .experience-heading-text {
-    font-size: 30px;
-    margin-top: 20px;
-  }
-
-  .experience-heading-sub-text {
-    font-size: 20px;
-  }
-
-  .experience-heading-div {
-    flex-direction: column;
-  }
-
-  .experience-heading-img-div {
-    margin-left: 0;
-    justify-content: center;
-  }
-
-  .experience-heading-img-div > img {
-    max-width: 100%;
-  }
-
-  .experience-heading-text-div {
-    text-align: center;
-  }
-
-  .experience-heading-text {
-    text-align: center;
-  }
-
-  .experience-heading-sub-text {
-    text-align: center;
-  }
-
-  .experience-header-detail-text {
-    font-size: 16px;
-    margin-right: 0px;
-    margin-left: auto;
-    line-height: normal;
-    text-align: center;
-  }
+.exp-page .exp-hero::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -20%;
+  transform: translateX(-50%);
+  width: min(100%, 520px);
+  height: 100px;
+  background: radial-gradient(
+    ellipse 80% 70% at 50% 50%,
+    rgba(42, 127, 158, 0.1),
+    transparent 65%
+  );
+  pointer-events: none;
+  z-index: -1;
 }

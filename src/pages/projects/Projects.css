@@ -79,6 +79,116 @@
   padding: 0 24px;
 }
 
+.projects-categories-wrap {
+  max-width: 1200px;
+  margin: 2.5rem auto 0;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.project-category {
+  text-align: left;
+}
+
+.project-category--lead .project-category__toggle {
+  border-color: rgba(31, 111, 134, 0.2);
+  box-shadow: var(--glass-inset), 0 0 0 1px rgba(31, 111, 134, 0.1),
+    0 6px 26px rgba(15, 37, 51, 0.06);
+}
+
+.project-category__toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.1rem 1.35rem;
+  border-radius: 16px;
+  cursor: pointer;
+  font-family: var(--font-body);
+  background: var(--surface-glass);
+  border: 1px solid var(--surface-border);
+  box-shadow: var(--glass-inset), 0 1px 2px rgba(15, 37, 51, 0.04),
+    var(--shadow-elevated);
+  backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+  -webkit-backdrop-filter: blur(var(--glass-blur))
+    saturate(var(--glass-saturate));
+  transition: transform 0.25s ease, box-shadow 0.3s ease,
+    border-color 0.25s ease;
+}
+
+.project-category__toggle:hover {
+  transform: translateY(-2px);
+  border-color: rgba(31, 111, 134, 0.22);
+  box-shadow: var(--glass-inset), 0 0 0 1px rgba(31, 111, 134, 0.12),
+    var(--shadow-glow);
+}
+
+.project-category__title {
+  font-size: clamp(1.15rem, 2.2vw, 1.35rem);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.project-category__chevron {
+  flex-shrink: 0;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+  margin-top: -0.2rem;
+}
+
+.project-category__chevron--open {
+  transform: rotate(225deg);
+  margin-top: 0.15rem;
+}
+
+.project-category__panel {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.55s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.35s ease;
+}
+
+.project-category__panel--open {
+  max-height: 8000px;
+  opacity: 1;
+  margin-top: 1rem;
+}
+
+.project-category__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.project-category__empty {
+  width: 100%;
+  margin: 0.35rem 0 0.75rem;
+  padding: 0.75rem 1rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: left;
+  border-radius: 12px;
+  border: 1px dashed var(--surface-border);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.publications-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 @media (max-width: 1380px) {
   .projects-heading-text,
   .publications-heading-text {
@@ -110,9 +220,9 @@
   }
 
   .repo-cards-div-main {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 30px;
+    padding: 0 12px;
   }
 }

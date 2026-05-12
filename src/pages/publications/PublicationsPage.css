@@ -1,0 +1,107 @@
+/* Publications page — premium research index */
+
+.publications-page {
+  width: 100%;
+}
+
+.publications-page__shell {
+  width: 92%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem 2.5rem;
+  box-sizing: border-box;
+}
+
+.publications-page__header {
+  position: relative;
+  text-align: center;
+  padding: 1.25rem 1rem 0;
+  margin-bottom: 2.25rem;
+}
+
+.publications-page__header::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -10%;
+  transform: translateX(-50%);
+  width: min(100%, 560px);
+  height: 120px;
+  background: radial-gradient(
+    ellipse 80% 70% at 50% 40%,
+    rgba(42, 127, 158, 0.14),
+    rgba(130, 160, 210, 0.06) 45%,
+    transparent 70%
+  );
+  filter: blur(20px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.publications-page__header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    rgba(15, 37, 51, 0.06) 1px,
+    transparent 1px
+  );
+  background-size: 14px 14px;
+  opacity: 0.35;
+  pointer-events: none;
+  z-index: 0;
+  mask-image: radial-gradient(
+    ellipse 85% 75% at 50% 40%,
+    black 20%,
+    transparent 75%
+  );
+}
+
+.publications-page__title {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 0.5rem;
+  font-family: var(--font-heading);
+  font-size: clamp(1.85rem, 3.5vw, 2.5rem);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.publications-page__tagline {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  max-width: 36rem;
+  font-size: clamp(0.95rem, 1.4vw, 1.05rem);
+  line-height: 1.55;
+}
+
+.publications-page__featured {
+  margin-bottom: 1.75rem;
+  position: relative;
+  z-index: 1;
+}
+
+.publications-page__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.35rem;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  .publications-page__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .publications-page__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .publications-page__header {
+    margin-bottom: 1.75rem;
+  }
+}

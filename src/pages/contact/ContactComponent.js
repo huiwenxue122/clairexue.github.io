@@ -3,103 +3,80 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import Button from "../../components/button/Button";
-import { Fade } from "react-reveal";
-import "./ContactComponent.css";
-import { contactPageData } from "../../portfolio.js";
+import ContactHero from "../../components/contact/ContactHero";
+import ContactActions from "../../components/contact/ContactActions";
+import AvailabilityCard from "../../components/contact/AvailabilityCard";
+import { contactPageData, socialMediaLinks } from "../../portfolio.js";
 import resumePdf from "../../assets/docs/Claire_Xue_Resume.pdf";
+import "./ContactComponent.css";
 
-const ContactData = contactPageData.contactSection;
-const addressSection = contactPageData.addressSection;
-const phoneSection = contactPageData.phoneSection;
+const contactSection = contactPageData.contactSection;
+const availability = contactPageData.availability;
+
+const rowingImageSrc = require("../../assets/images/rowing.JPG");
+
+function socialUrl(name) {
+  const entry = socialMediaLinks.find((m) => m.name === name);
+  return entry?.link;
+}
 
 class Contact extends Component {
   render() {
     const theme = this.props.theme;
+    const imageSrc = require(`../../assets/images/${contactSection.profile_image_path}`);
+
+    const linkedInUrl = socialUrl("LinkedIn");
+    const githubUrl = socialUrl("Github");
+
     return (
-      <div className="contact-main">
+      <div className="contact-page">
         <Header theme={theme} />
-        <div className="basic-contact">
-          <Fade bottom duration={1000} distance="40px">
-            <div className="contact-heading-div">
-              <div className="contact-heading-img-div">
+        <main className="contact-page__main">
+          <ContactHero
+            theme={theme}
+            title={contactSection.title}
+            subtitle={contactSection.subtitle}
+            email={contactSection.email}
+            locationLine={contactSection.locationLine}
+            imageSrc={imageSrc}
+          >
+            <ContactActions
+              email={contactSection.email}
+              resumeUrl={resumePdf}
+              linkedInUrl={linkedInUrl}
+              githubUrl={githubUrl}
+            />
+          </ContactHero>
+          <AvailabilityCard theme={theme} data={availability} />
+          <figure className="contact-page__accent" aria-label="Rowing">
+            <div className="contact-page__accent-glow" aria-hidden />
+            <div
+              className="contact-page__accent-glow contact-page__accent-glow--layer2"
+              aria-hidden
+            />
+            <div className="contact-page__accent-frame ds-glass-card">
+              <div className="contact-page__accent-viewport">
                 <img
-                  src={require(`../../assets/images/${ContactData["profile_image_path"]}`)}
-                  alt=""
-                  className="contact-profile-img"
+                  src={rowingImageSrc}
+                  alt="Claire rowing"
+                  className="contact-page__accent-img"
+                  width={960}
+                  height={540}
+                  loading="lazy"
                 />
               </div>
-              <div className="contact-heading-text-div">
-                <h1
-                  className="contact-heading-text"
-                  style={{ color: theme.text }}
-                >
-                  {ContactData["title"]}
-                </h1>
-                <p
-                  className="contact-header-detail-text subTitle"
-                  style={{ color: theme.secondaryText }}
-                >
-                  {ContactData["description"]}
-                </p>
-                <SocialMedia theme={theme} />
-                <div className="resume-btn-div">
-                  <Button
-                    text="See My Resume"
-                    newTab={true}
-                    href={resumePdf}
-                    theme={theme}
-                  />
-                </div>
-              </div>
             </div>
-          </Fade>
-          <Fade bottom duration={1000} distance="40px">
-            <div className="address-heading-div">
-              <div className="contact-heading-img-div">
-                <img
-                  src={require("../../assets/images/rowing.JPG")}
-                  alt=""
-                  className="address-cover-img"
-                />
-              </div>
-              <div className="address-heading-text-div">
-                <h1
-                  className="address-heading-text"
-                  style={{ color: theme.text }}
-                >
-                  {addressSection["title"]}
-                </h1>
-                <p
-                  className="contact-header-detail-text subTitle"
-                  style={{ color: theme.secondaryText }}
-                >
-                  {addressSection["subtitle"]}
-                </p>
-                <h1
-                  className="address-heading-text"
-                  style={{ color: theme.text }}
-                >
-                  {phoneSection["title"]}
-                </h1>
-                <p
-                  className="contact-header-detail-text subTitle"
-                  style={{ color: theme.secondaryText }}
-                >
-                  {phoneSection["subtitle"]}
-                </p>
-                <div className="address-btn-div">
-                  <Button
-                    text="Visit on Google Maps"
-                    newTab={true}
-                    href={addressSection.location_map_link}
-                    theme={theme}
-                  />
-                </div>
-              </div>
-            </div>
-          </Fade>
-        </div>
+          </figure>
+          <div className="contact-page__more">
+            <p
+              className="contact-page__more-label"
+              style={{ color: theme.secondaryText }}
+            >
+              Also on
+            </p>
+            <SocialMedia theme={theme} />
+          </div>
+        </main>
         <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
         <TopButton theme={this.props.theme} />
       </div>

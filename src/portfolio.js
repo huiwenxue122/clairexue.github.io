@@ -22,9 +22,10 @@ const greeting = {
   title: "Claire Xue",
   logo_name: "Claire Xue",
   nickname: "Huiwen惠文 Xue薛",
-  subTitle: "Applied AI Engineer ",
+  subTitle:
+    "AI Engineer building agentic AI products, RAG systems, and production-ready ML tools.",
   introParagraph:
-    "Building high-performance ML systems and scalable AI backends. I'm passionate about making AI work reliably in production.",
+    "I turn messy workflows into reliable AI products, from retrieval and agent orchestration to backend APIs, evaluation, and deployment.",
   resumeLink:
     "https://drive.google.com/file/d/1W1Zn_GglEhYV1myTyAi8NtoGWXSfFEq3/view?usp=drive_link",
   portfolio_repository: "https://github.com/huiwenxue122",
@@ -498,10 +499,10 @@ const certifications = {
 // Experience Page
 const experience = {
   title: "Experience",
-  /* subtitle: "Hackathon, Research & Internship",
-  description:
-    "Highlights from hackathons, research at Brown, and industry experience.",
-  */
+  subtitle:
+    "Building AI systems across research, product engineering, and hackathons.",
+  tagline:
+    "Focused on agentic AI, RAG, ML pipelines, and full-stack AI products.",
   header_image_path: "hackthon.jpg",
   sections: [
     {
@@ -594,7 +595,7 @@ const projectsHeader = {
 const publicationsHeader = {
   title: "Publications",
   tagline:
-    "My research focuses on three pillars of modern AI Engineering: Infrastructure Optimization, Knowledge Evolution, and Feature-Driven Precision.",
+    "Research and writing on applied machine learning, language systems, and feature-driven intelligence.",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -604,34 +605,54 @@ const publications = {
       id: "acoustic-feature-classification",
       name: "Acoustic Feature Classification System",
       createdAt: "2023-07-02T00:00:00Z",
+      category: "Signal Processing",
+      tags: ["ML", "Acoustics", "Classification"],
+      summary:
+        "ML framework for acoustic pattern recognition with strong accuracy through feature fusion (performed vs. synthesized Guzheng), as described in the linked work.",
       description:
         "Developed a high-precision ML framework for acoustic pattern recognition, achieving 99.73% accuracy through advanced feature fusion.",
       url:
         "https://www.researchgate.net/publication/376166223_Effective_acoustic_parameters_for_automatic_classification_of_performed_and_synthesized_Guzheng_music",
+      featured: false,
     },
     {
       id: "gnn-distributed-optimizer",
       name: "GNN-based Distributed System Optimizer",
       createdAt: "2023-02-27T00:00:00Z",
+      category: "ML Systems",
+      tags: ["GNN", "Distributed Training", "Optimization"],
+      summary:
+        "Graph Neural Network approach to map model layers to hardware for large-scale distributed training; reports substantial training-efficiency improvements in the paper.",
       description:
         "Proposed a novel Graph Neural Network (GNN) framework to optimize the training of billion-parameter models across regionally distributed computing systems. By intelligently mapping model layers to hardware nodes, the system improved training efficiency by over 20%.",
       url: "https://arxiv.org/abs/2302.13741",
+      featured: false,
     },
     {
       id: "self-escalation-llms",
       name: "Self-Escalation Learning for LLMs",
       createdAt: "2023-04-01T00:00:00Z",
+      category: "NLP",
+      tags: ["NLG", "LLM", "Self-training", "NLP"],
+      summary:
+        "Training framework where NLG models learn updated knowledge without extra external datasets, via dual-model self-escalation across seven NLP tasks without architecture changes.",
       description:
         "Developed a novel training framework that enables Natural Language Generation (NLG) models to autonomously learn up-to-date knowledge without requiring additional external datasets. By implementing a dual-model self-escalation process, this work achieved stable performance improvements across seven natural language processing tasks without altering the model architecture.",
       url: "https://www.mdpi.com/2076-3417/13/8/4758",
+      featured: true,
     },
     {
       id: "vector-level-augmentation-nlu",
       name: "Vector-Level Data Augmentation for NLU",
       createdAt: "2022-12-12T00:00:00Z",
+      category: "NLP",
+      tags: ["NLU", "Embeddings", "Data Augmentation"],
+      summary:
+        "Random Position Noise (RPN) augments at the embedding level to improve NLU robustness without gradient updates during sample generation—efficient for large-scale data.",
       description:
         "Engineered Random Position Noise (RPN), a novel data augmentation algorithm that operates directly at the word vector (embedding) level to enhance Natural Language Understanding (NLU). Unlike traditional methods, RPN improves model robustness without requiring gradient updates during sample generation, making it highly efficient for large-scale datasets.",
       url: "https://arxiv.org/abs/2212.05961",
+      featured: false,
     },
   ],
 };
@@ -639,10 +660,31 @@ const publications = {
 // Contact Page
 const contactPageData = {
   contactSection: {
-    title: "Contact Me",
     profile_image_path: "Profile.JPG",
-    description:
-      "I am available on every social media. \nI will reply your message within 24 hours.\nMy email is clairexuework@gmail.com.",
+    title: "Let's build something useful with AI.",
+    subtitle:
+      "I'm open to AI Engineer, GenAI Engineer, and Applied ML Engineer roles, especially work involving agentic systems, RAG, LLM applications, and production ML tools.",
+    email: "clairexuework@gmail.com",
+    locationLine: "Based in Providence / Boston area. Open to relocation.",
+  },
+  /** Compact recruiting hints — Contact page availability card */
+  availability: {
+    lookingLabel: "Currently looking for:",
+    lookingFor: [
+      "AI Engineer",
+      "GenAI Engineer",
+      "Applied ML Engineer",
+      "ML Engineer",
+    ],
+    focusLabel: "Focus areas:",
+    focusAreas: [
+      "Agentic AI",
+      "RAG",
+      "LLM Apps",
+      "FastAPI",
+      "LangGraph",
+      "PyTorch",
+    ],
   },
   blogSection: {
     title: "Blogs",
@@ -653,14 +695,14 @@ const contactPageData = {
   },
   addressSection: {
     title: "Address",
-    subtitle: "Los Angeles, CA / Boston, Massachusetts",
-    locality: "Los Angeles",
+    subtitle: "Providence / Boston area — open to relocation",
+    locality: "Providence",
     country: "USA",
-    region: "California",
+    region: "RI",
     postalCode: "",
     streetAddress: "",
     avatar_image_path: "address_image.svg",
-    location_map_link: "https://www.google.com/maps/search/Los+Angeles+CA",
+    location_map_link: "https://www.google.com/maps/search/Providence+RI",
   },
   phoneSection: {
     title: "",
@@ -783,6 +825,122 @@ const personalIntro = {
     "Beyond the terminal, I am a multi-instrumentalist (Guitar & Guzheng古筝) and a dedicated practitioner of calligraphy. My passion for structured patterns extends to linguistics: I am trilingual in Mandarin, English, and currently mastering French. I believe that the discipline of traditional arts and the logic of language learning deeply inform my approach to building intuitive and culturally-aware AI systems.",
 };
 
+/** Compact home landing content: hero, capability grid, education + about (detailed coursework lives in `whatIDoEducation`). */
+const homePage = {
+  hero: {
+    headline: "Claire Xue",
+    subtitle:
+      "AI Engineer building agentic AI products, RAG systems, and production-ready ML tools.",
+    supporting:
+      "I turn messy workflows into reliable AI products, from retrieval and agent orchestration to backend APIs, evaluation, and deployment.",
+    skillTags: [
+      "LangGraph",
+      "RAG",
+      "Vector DBs",
+      "FastAPI",
+      "LLM Evaluation",
+      "AWS",
+      "Docker",
+      "PyTorch",
+    ],
+    floatLabels: ["Agentic AI", "RAG Systems", "LLM Apps", "Product Builder"],
+  },
+  capabilities: [
+    {
+      title: "Agentic AI Systems",
+      blurb:
+        "LangGraph workflows, tool routing, guardrails, human-in-the-loop logic, and multi-agent orchestration.",
+      iconClass: "fa-robot",
+    },
+    {
+      title: "RAG & Knowledge Systems",
+      blurb:
+        "Document ingestion, embeddings, vector search, GraphRAG, Neo4j, FAISS, and evidence-backed answers.",
+      iconClass: "fa-database",
+    },
+    {
+      title: "Applied ML Pipelines",
+      blurb:
+        "PyTorch, scikit-learn, EEG classification, computer vision, signal processing, and model evaluation.",
+      iconClass: "fa-wave-square",
+    },
+    {
+      title: "Full-Stack AI Products",
+      blurb:
+        "FastAPI, React, Next.js, Streamlit, REST APIs, Docker, cloud deployment, and production UX.",
+      iconClass: "fa-layer-group",
+    },
+  ],
+  coreStack: [
+    {
+      label: "LLM & Agents",
+      items: [
+        "OpenAI API",
+        "Anthropic",
+        "Gemini",
+        "LangChain",
+        "LangGraph",
+        "LlamaIndex",
+        "function calling",
+        "tool use",
+      ],
+    },
+    {
+      label: "RAG & Data",
+      items: [
+        "FAISS",
+        "Pinecone",
+        "Chroma",
+        "Neo4j",
+        "embeddings",
+        "vector search",
+        "GraphRAG",
+        "SQL",
+      ],
+    },
+    {
+      label: "Backend & Deployment",
+      items: [
+        "Python",
+        "FastAPI",
+        "REST APIs",
+        "Docker",
+        "AWS",
+        "Vercel",
+        "CI/CD",
+      ],
+    },
+    {
+      label: "ML & Evaluation",
+      items: [
+        "PyTorch",
+        "scikit-learn",
+        "pandas",
+        "NumPy",
+        "evaluation",
+        "observability",
+        "LangSmith",
+      ],
+    },
+    {
+      label: "Frontend",
+      items: ["React", "Next.js", "TypeScript", "Streamlit", "Tailwind CSS"],
+    },
+  ],
+  education: {
+    school: "Brown University",
+    degree: "M.S. Electrical and Computer Engineering",
+    gpa: "GPA 4.0 / 4.0",
+    period: "Sept 2024 – May 2026",
+  },
+  about: {
+    statement:
+      "I like building AI systems that are reliable, explainable, and useful in real workflows.",
+    personalNote:
+      "Outside of engineering, I play guitar and guzheng, practice calligraphy, and study French. I like how music, language, and visual structure all train the same instinct I use in building AI products: turning messy signals into something clear and useful.",
+  },
+};
+
 export {
   settings,
   seo,
@@ -800,4 +958,5 @@ export {
   technicalStack,
   whatIDoEducation,
   personalIntro,
+  homePage,
 };

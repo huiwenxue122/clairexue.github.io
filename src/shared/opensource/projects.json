@@ -1,13 +1,88 @@
 {
+  "categories": [
+    {
+      "id": "ai-agent",
+      "title": "AI /Agentic Projects",
+      "projectIds": [
+        "internal-it-helpdesk-agent",
+        "redlineai-legal-risk-detector",
+        "interactive-novel-ai-platform",
+        "nasa-voice-ai-assistant",
+        "enterprise-knowledge-qa"
+      ]
+    },
+    {
+      "id": "hackathon",
+      "title": "Hackathon Projects",
+      "projectIds": [
+        "citypulse-wallet",
+        "meetingflowai",
+        "stellar-ai-treasury"
+      ]
+    },
+    {
+      "id": "ml-dl",
+      "title": "ML/DL Projects",
+      "projectIds": [
+        "deep-image-restoration",
+        "eeg-bci-target-classification",
+        "laserpoint-3d-scanner"
+      ]
+    }
+  ],
   "data": [
+    {
+      "id": "citypulse-wallet",
+      "name": "CityPulse-Wallet",
+      "createdAt": "2026-02-01T00:00:00Z",
+      "url": "https://github.com/huiwenxue122/CityPulse-Wallet",
+      "description": "CityPulse Wallet is an AI-powered city wallet prototype that connects local city context, merchant goals, and wallet-ready customer offers. The demo shows a full loop: a merchant sets a business goal, an LLM generates a guarded offer, the offer is activated into the customer wallet, the user redeems it, and merchant results update.",
+      "summary": "AI-powered city wallet connecting merchants, goals, and redeemable customer offers in one loop.",
+      "isFork": false,
+      "languages": [],
+      "tags": [
+        "Next.js",
+        "TypeScript",
+        "Vercel",
+        "LLM"
+      ],
+      "demoUrl": "https://city-pulse-wallet.vercel.app/"
+    },
+    {
+      "id": "internal-it-helpdesk-agent",
+      "name": "Policy-Governed IT Helpdesk Agent",
+      "createdAt": "2026-02-01T00:00:00Z",
+      "url": "https://github.com/huiwenxue122/-Internal-IT-helpdesk-agent",
+      "description": "A LangGraph-orchestrated policy enforcement agent for internal IT helpdesk requests. It combines policy RAG, a high-risk rule graph, explicit conflict detection, deterministic trust/tool/output guards, and an auditable decision trace.\n\nCore architectural principle: The Policy Reasoning Agent proposes decisions. It does not have execution authority. Tool execution is controlled by deterministic guards that run independently of any LLM.",
+      "summary": "Policy-first IT helpdesk agent with RAG, rule graph, and deterministic guards for auditable decisions.",
+      "isFork": false,
+      "languages": [],
+      "tags": [
+        "Python",
+        "FastAPI",
+        "LangGraph",
+        "Neo4j",
+        "OpenAI"
+      ],
+      "demoUrl": "https://internal-it-helpdesk-agent.onrender.com"
+    },
     {
       "id": "redlineai-legal-risk-detector",
       "name": "RedlineAI: Multi-agent Contract Risk Review System",
       "createdAt": "2025-01-01T00:00:00Z",
       "url": "https://github.com/huiwenxue122/-RedlineAI-legal-risk-detector-",
       "description": "RedlineAI helps small SaaS companies review customer contracts before signing.\n\nRedlineAI flags the clauses that can hurt you, explains the risk in plain English, and suggests what to say to the customer's legal team.\n\nThe system models contract review as a policy-driven reasoning workflow. It parses contracts into a graph-aware legal structure, runs a three-agent reasoning pipeline, and produces a structured risk memo with evidence chains.",
+      "summary": "Multi-agent contract review for SaaS teams—plain-English risks and evidence-backed memos before you sign.",
       "isFork": false,
-      "languages": []
+      "languages": [],
+      "tags": [
+        "Python",
+        "LangGraph",
+        "Neo4j",
+        "FastAPI",
+        "Next.js"
+      ],
+      "demoUrl": "https://redline-ai-legal-risk-detector.vercel.app"
     },
     {
       "id": "interactive-novel-ai-platform",
@@ -15,8 +90,15 @@
       "createdAt": "2025-01-01T00:00:00Z",
       "url": "https://github.com/huiwenxue122/Agent-Orchestrator-for-Interactive-Novel-AI-Platform",
       "description": "An AI-powered content platform that enables anyone to easily rewrite and continue novels. Through a Context Memory Engine for narrative coherence and an Intelligent Hint Recommendation Algorithm to lower the creative barrier, we deliver an immersive \"IF-Line\" interactive storytelling experience.",
+      "summary": "Rewrite and continue novels with memory and hints for coherent interactive fiction.",
       "isFork": false,
-      "languages": []
+      "languages": [],
+      "tags": [
+        "Python",
+        "React",
+        "LLM",
+        "Orchestration"
+      ]
     },
     {
       "id": "nasa-voice-ai-assistant",
@@ -24,8 +106,17 @@
       "createdAt": "2025-01-01T00:00:00Z",
       "url": "https://github.com/huiwenxue122/NASA-voice-AI-Assistant",
       "description": "A deterministic, safety-oriented EVA-style copilot demo: typed or spoken commands, mock suit telemetry, YAML procedures, guardrails, and a React mission console. No LLM and no cloud speech APIs — local Whisper for speech-to-text and the browser's Web Speech API for read-aloud replies.",
+      "summary": "Deterministic EVA copilot demo with voice, mock telemetry, YAML procedures, and a React mission console.",
       "isFork": false,
-      "languages": []
+      "languages": [],
+      "tags": [
+        "React",
+        "TypeScript",
+        "Whisper",
+        "Web Speech API",
+        "YAML"
+      ],
+      "demoUrl": "https://nasa-voice-ai-assistant.onrender.com"
     },
     {
       "id": "stellar-ai-treasury",
@@ -33,8 +124,16 @@
       "createdAt": "2024-10-26T00:00:00Z",
       "url": "https://github.com/huiwenxue122/Stellar-AI-Treasury?tab=readme-ov-file",
       "description": "AI-powered multi-agent quantitative trading platform that combines GPT-4o AI agents with Stellar Soroban smart contracts for transparent, secure portfolio management. Three specialized agents (Trading, Risk, Payment) execute 10 strategies while a custom Rust contract enforces risk limits on-chain.",
+      "summary": "GPT-4o agents plus Stellar Soroban contracts for multi-strategy trading with on-chain risk limits.",
       "isFork": false,
-      "languages": []
+      "languages": [],
+      "tags": [
+        "Python",
+        "Rust",
+        "Soroban",
+        "GPT-4o",
+        "Multi-agent"
+      ]
     },
     {
       "id": "enterprise-knowledge-qa",
@@ -42,8 +141,67 @@
       "createdAt": "2025-01-01T00:00:00Z",
       "url": "https://github.com/huiwenxue122/Enterprise-Knowledge-QA-System",
       "description": "An AI-powered document question-answering system that allows users to upload enterprise documents, and interactively ask questions based on their content. Users can upload one or more PDF documents and ask natural-language questions. Built with Streamlit, LangChain, FAISS, and OpenAI models.",
+      "summary": "Enterprise RAG over uploaded PDFs with natural-language Q&A in Streamlit.",
       "isFork": false,
-      "languages": []
+      "languages": [],
+      "tags": [
+        "Python",
+        "Streamlit",
+        "LangChain",
+        "FAISS",
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "deep-image-restoration",
+      "name": "Transformer-Based Image Restoration",
+      "createdAt": "2026-02-01T00:00:00Z",
+      "url": "https://github.com/huiwenxue122/DeepImageRestoration",
+      "description": "Long Live DunHuang is a physics-aware image restoration project designed to digitally recover degraded Dunhuang murals while preserving their structural and material authenticity. Our system combines a Swin Transformer-based restoration backbone with an efficient decoder module and a physics refinement module that incorporates pigment chemistry, spectral properties, aging effects, and historical accuracy constraints. We designed the pipeline to process damaged mural inputs with irregular masks and box masks, generate visually faithful restored outputs, and validate the results through physics-based analysis. The project aims to make cultural heritage restoration more efficient, interpretable, and grounded in domain-specific knowledge rather than relying only on visual reconstruction.",
+      "summary": "Physics-aware Swin pipeline to restore degraded Dunhuang murals with domain-grounded refinement.",
+      "isFork": false,
+      "languages": [],
+      "tags": [
+        "Python",
+        "PyTorch",
+        "Swin Transformer",
+        "Computer Vision"
+      ]
+    },
+    {
+      "id": "eeg-bci-target-classification",
+      "name": "NeuroTarget EEG Classifier",
+      "createdAt": "2026-02-01T00:00:00Z",
+      "url": "https://github.com/huiwenxue122/EEG-BCI-Target-Classification",
+      "description": "NeuroTarget EEG Classifier is an EEG-based brain-computer interface project that classifies left versus right visual targets from single-trial RSVP signals. I built the full pipeline for EEG preprocessing, N2pc feature extraction, and SVM classification, using nested cross-validation to evaluate model performance across multiple participants and stimulus rates. The project reproduced key findings from the original study and showed that N2pc-based spatial attention signals can support reliable target classification, with the strongest performance at 5 Hz.",
+      "summary": "Single-trial RSVP EEG pipeline for left/right targets using N2pc features and nested cross-validation.",
+      "isFork": false,
+      "languages": [],
+      "tags": [
+        "Python",
+        "scikit-learn",
+        "MNE",
+        "SVM",
+        "Signal Processing"
+      ],
+      "paperUrl": "https://doi.org/10.1371/journal.pone.0178498"
+    },
+    {
+      "id": "laserpoint-3d-scanner",
+      "name": "LaserPoint 3D Scanner",
+      "createdAt": "2026-02-01T00:00:00Z",
+      "url": "https://github.com/huiwenxue122/3D-scanning",
+      "description": "LaserPoint 3D Scanner is a structured-light 3D reconstruction system that uses a Raspberry Pi-based turntable scanner, dual line lasers, and a Qt control interface to capture object images and generate dense point clouds. I implemented the core C++ pipeline for laser line detection, camera calibration, laser plane calibration, and optical triangulation, converting detected laser pixels into 3D world coordinates. The system validates calibration through reprojection error and reconstructs scanned objects by aligning point clouds across turntable rotations.",
+      "summary": "Structured-light turntable scanner with C++ triangulation pipeline and Qt control for dense point clouds.",
+      "isFork": false,
+      "languages": [],
+      "tags": [
+        "C++",
+        "Qt",
+        "Eigen",
+        "OpenCV",
+        "MATLAB"
+      ]
     },
     {
       "id": "meetingflowai",
@@ -51,8 +209,16 @@
       "createdAt": "2025-11-01T00:00:00Z",
       "url": "https://github.com/huiwenxue122/MeetingFlowAI",
       "description": "A comprehensive sales automation platform built for the IBM watsonx Orchestrate Hackathon. It uses a multi-agent AI system to automatically process sales meeting transcripts, extract key information, update CRM systems, and generate follow-up communications.",
+      "summary": "Multi-agent sales automation from meeting transcripts to CRM updates and follow-ups (IBM watsonx hackathon).",
       "isFork": false,
-      "languages": []
+      "languages": [],
+      "tags": [
+        "Python",
+        "IBM watsonx",
+        "Multi-agent",
+        "CRM"
+      ],
+      "demoUrl": "https://lablab.ai/ai-hackathons/agentic-ai-hackathon-ibm-watsonx-orchestrate/salesflow-ai/meetingflowai"
     }
   ]
 }

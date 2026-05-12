@@ -1,56 +1,87 @@
 import React from "react";
 import "./PublicationCard.css";
-import { Fade } from "react-reveal";
 
-export default function PublicationCard({ pub, theme }) {
-  function openPubinNewTab(url) {
-    var win = window.open(url, "_blank");
-    win.focus();
-  }
+/**
+ * @param {object} pub — publication from portfolio (url, name, summary, category, tags, …)
+ * @param {'featured' | 'grid'} variant
+ */
+export default function PublicationCard({ pub, theme, variant = "grid" }) {
+  const isFeatured = variant === "featured";
 
   return (
-    <div
-      className="publication-card-div"
-      style={{ backgroundColor: theme.highlight }}
+    <a
+      href={pub.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={
+        isFeatured ? "pub-card pub-card--featured" : "pub-card pub-card--grid"
+      }
     >
-      <Fade bottom duration={2000} distance="40px">
-        <div key={pub.id} onClick={() => openPubinNewTab(pub.url)}>
-          <div className="publication-name-div">
-            <p className="publication-name" style={{ color: theme.text }}>
-              {pub.name}
-            </p>
-          </div>
-          <p className="publication-description" style={{ color: theme.text }}>
-            {pub.description}
-          </p>
-          {/* <div className="repo-stats">
-          <div className="repo-left-stat">
-            <span>
-              <div className="language-color" style={{ backgroundColor: repo.node.primaryLanguage.color }}></div>
-              <p>{repo.node.primaryLanguage.name}</p>
-            </span>
-            <span>
-              <svg aria-hidden="true" className="octicon" height="16" role="img" viewBox="0 0 10 16" width="10" fill="rgb(106, 115, 125)" className="repo-star-svg">
-                <path
-                  fill-rule="evenodd"
-                  d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"
-                ></path>
-              </svg>
-              <p>{repo.node.forkCount}</p>
-            </span>
-            <span>
-              <svg aria-hidden="true" className="octicon" height="16" role="img" viewBox="0 0 14 16" width="14" fill="rgb(106, 115, 125)" className="repo-star-svg">
-                <path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path>
-              </svg>
-              <p>{repo.node.stargazers.totalCount}</p>
-            </span>
-          </div>
-          <div className="repo-right-stat">
-            <p>{repo.node.diskUsage} KB</p>
-          </div>
-        </div> */}
+      {isFeatured && (
+        <span className="pub-card__ribbon" style={{ color: theme.text }}>
+          Featured Research
+        </span>
+      )}
+
+      {!isFeatured && (
+        <span
+          className="pub-card__category"
+          style={{ color: theme.secondaryText }}
+        >
+          {pub.category || "Publication"}
+        </span>
+      )}
+
+      {isFeatured && (
+        <span
+          className="pub-card__category pub-card__category--featured"
+          style={{ color: theme.secondaryText }}
+        >
+          {pub.category || "Publication"}
+        </span>
+      )}
+
+      <h2
+        className={
+          isFeatured
+            ? "pub-card__title pub-card__title--featured"
+            : "pub-card__title"
+        }
+        style={{ color: theme.text }}
+      >
+        {pub.name}
+      </h2>
+
+      <p
+        className={
+          isFeatured
+            ? "pub-card__summary pub-card__summary--featured"
+            : "pub-card__summary"
+        }
+        style={{ color: theme.secondaryText }}
+      >
+        {pub.summary || pub.description}
+      </p>
+
+      {Array.isArray(pub.tags) && pub.tags.length > 0 && (
+        <ul className="pub-card__tags" aria-label="Topics">
+          {pub.tags.map((t) => (
+            <li key={t}>
+              <span className="pub-card__tag">{t}</span>
+            </li>
+          ))}
+        </ul>
+      )}
+
+      <span className="pub-card__cta">
+        Read Article <span aria-hidden>→</span>
+      </span>
+
+      {isFeatured && (
+        <div className="pub-card__accent" aria-hidden>
+          <i className="fas fa-file-lines" />
         </div>
-      </Fade>
-    </div>
+      )}
+    </a>
   );
 }

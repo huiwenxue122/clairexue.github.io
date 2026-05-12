@@ -1,28 +1,33 @@
 .main-button {
-  background-color: #1a1d29;
-  border: 1px solid #1a1d29;
-  color: #faf9f7;
-  font-weight: 500;
-  line-height: 1.2;
+  background: linear-gradient(135deg, #0b1f2a 0%, #102d3d 40%, #1e7891 100%);
+  border: 1px solid rgba(30, 120, 145, 0.5);
+  color: #f8fbfd;
+  font-weight: 600;
+  line-height: 1.25;
   width: max-content;
-  padding: 14px 28px;
+  padding: 13px 26px;
   margin-right: 0;
-  border-radius: 4px;
+  border-radius: 999px;
   text-align: center;
   text-decoration: none;
   font-family: var(--font-body);
   display: inline-block;
   margin-top: 20px;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   cursor: pointer;
-  letter-spacing: 0.06em;
-  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+  letter-spacing: 0.05em;
+  box-shadow: 0 4px 22px rgba(11, 31, 42, 0.14);
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s ease, filter 0.3s ease, border-color 0.3s ease;
 }
 
 .main-button:hover {
-  background-color: #2d3142;
-  border-color: #2d3142;
-  color: #faf9f7;
+  transform: translateY(-2px);
+  border-color: rgba(56, 189, 248, 0.45);
+  box-shadow: 0 0 28px rgba(56, 189, 248, 0.22),
+    0 12px 32px rgba(11, 31, 42, 0.14);
+  filter: brightness(1.05);
+  color: #fff;
 }
 
 .project-button {

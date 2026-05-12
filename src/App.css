@@ -24,13 +24,15 @@
 .heading {
   font-family: var(--font-heading);
   color: var(--color-text);
-  font-weight: 500;
-  letter-spacing: 0.02em;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  line-height: 1.2;
 }
 
 .subTitle {
   color: var(--color-muted);
   font-weight: 400;
+  letter-spacing: 0.015em;
 }
 
 /* Animations */

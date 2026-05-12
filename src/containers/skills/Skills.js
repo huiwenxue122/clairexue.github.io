@@ -31,8 +31,8 @@ export default function Skills(props) {
                 key={idx}
                 className="tech-stack-card"
                 style={{
-                  backgroundColor: theme.highlight || "#fff",
-                  borderColor: "rgba(26, 29, 41, 0.08)",
+                  backgroundColor: theme.highlight || "rgba(255,255,255,0.05)",
+                  borderColor: theme.surfaceBorder || "var(--surface-border)",
                 }}
               >
                 <h3
@@ -59,8 +59,10 @@ export default function Skills(props) {
                             className="tech-stack-tag"
                             style={{
                               color: theme.text,
-                              borderColor: "rgba(26, 29, 41, 0.15)",
-                              backgroundColor: theme.body,
+                              borderColor:
+                                theme.tagBorder || "var(--tag-border)",
+                              backgroundColor:
+                                theme.tagBg || "rgba(255,255,255,0.04)",
                             }}
                           >
                             {item}
@@ -96,7 +98,7 @@ export default function Skills(props) {
                 key={idx}
                 className="whatido-education-entry"
                 style={{
-                  borderColor: "rgba(26, 29, 41, 0.08)",
+                  borderColor: theme.surfaceBorder || "var(--surface-border)",
                   backgroundColor: theme.highlight || "transparent",
                 }}
               >
@@ -139,12 +141,14 @@ export default function Skills(props) {
           <h2 className="whatido-section-title" style={{ color: theme.text }}>
             {personalIntro.title}
           </h2>
-          <p
-            className="whatido-personal-content"
-            style={{ color: theme.secondaryText }}
-          >
-            {personalIntro.content}
-          </p>
+          <div className="whatido-personal-panel ds-glass-card">
+            <p
+              className="whatido-personal-content"
+              style={{ color: theme.secondaryText }}
+            >
+              {personalIntro.content}
+            </p>
+          </div>
         </section>
       </Fade>
     </div>

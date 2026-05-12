@@ -3,20 +3,28 @@
 .experience-card {
   min-width: 275px;
   margin-bottom: 20px;
-  border-radius: 6px;
+  border-radius: 16px;
   display: flex;
   flex-direction: column;
   padding: 20px;
   margin-left: 10px;
-  background: #fff;
-  border: 1px solid rgba(26, 29, 41, 0.08);
-  box-shadow: 0 2px 12px rgba(26, 29, 41, 0.06);
-  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+  background: var(--surface-glass);
+  border: 1px solid var(--surface-border);
+  box-shadow: var(--glass-inset), 0 1px 2px rgba(15, 37, 51, 0.04),
+    var(--shadow-elevated);
+  backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+  -webkit-backdrop-filter: blur(var(--glass-blur))
+    saturate(var(--glass-saturate));
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.4s ease, border-color 0.35s ease, background 0.35s ease;
 }
 
 .experience-card:hover {
-  box-shadow: 0 8px 24px rgba(26, 29, 41, 0.08);
-  border-color: rgba(26, 29, 41, 0.12);
+  transform: translateY(-4px);
+  border-color: rgba(31, 111, 134, 0.16);
+  box-shadow: var(--glass-inset), 0 0 0 1px rgba(31, 111, 134, 0.1),
+    var(--shadow-glow), var(--shadow-hover);
+  background: var(--surface-glass-strong);
 }
 
 .arrow-left {
@@ -56,8 +64,9 @@
 .experience-card-logo {
   width: 100px;
   height: 100px;
-  box-shadow: 0 2px 12px rgba(26, 29, 41, 0.08);
+  box-shadow: var(--shadow-elevated);
   border-radius: 50px;
+  border: 1px solid var(--surface-border);
 }
 
 .experience-card-title {
@@ -126,7 +135,7 @@
 }
 
 .experience-card-link {
-  color: #0969da;
+  color: var(--color-link);
   text-decoration: none;
 }
 

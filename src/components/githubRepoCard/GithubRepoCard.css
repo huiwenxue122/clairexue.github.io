@@ -1,18 +1,95 @@
 .repo-card-div {
+  position: relative;
   color: var(--color-muted);
-  background: #fff;
-  border: 1px solid rgba(26, 29, 41, 0.08);
-  border-radius: 6px;
-  box-shadow: 0 2px 12px rgba(26, 29, 41, 0.06);
-  padding: 1.75rem;
+  text-align: left;
+  border-radius: 16px;
+  padding: 1.5rem 1.6rem;
   cursor: pointer;
-  flex: 1 1 25%;
-  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+  overflow: hidden;
+  background: var(--surface-glass);
+  border: 1px solid var(--surface-border);
+  box-shadow: var(--glass-inset), 0 1px 2px rgba(15, 37, 51, 0.04),
+    var(--shadow-elevated);
+  backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+  -webkit-backdrop-filter: blur(var(--glass-blur))
+    saturate(var(--glass-saturate));
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.45s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.35s ease,
+    background 0.35s ease;
+}
+
+.repo-card-div--with-cover {
+  padding: 0;
+}
+
+.repo-cover {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+}
+
+.repo-cover-img {
+  display: block;
+  width: 100%;
+  height: 168px;
+  object-fit: cover;
+}
+
+.repo-card-body {
+  padding: 1.15rem 1.5rem 1.45rem;
+}
+
+.repo-card-div--with-cover .repo-name {
+  margin-bottom: 0.5rem;
+}
+
+.repo-card-div--with-cover .repo-description {
+  margin-top: 0.5rem;
+}
+
+.repo-card-div::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    120% 80% at 10% 0%,
+    rgba(31, 111, 134, 0.1),
+    transparent 55%
+  );
+  opacity: 0.65;
+  pointer-events: none;
+  animation: repoCardBreath 9s ease-in-out infinite;
+}
+
+@keyframes repoCardBreath {
+  0%,
+  100% {
+    opacity: 0.32;
+  }
+  50% {
+    opacity: 0.52;
+  }
 }
 
 .repo-card-div:hover {
-  box-shadow: 0 8px 24px rgba(26, 29, 41, 0.08);
-  border-color: rgba(26, 29, 41, 0.12);
+  transform: translateY(-4px) scale(1.006);
+  border-color: rgba(31, 111, 134, 0.18);
+  box-shadow: var(--glass-inset), 0 0 0 1px rgba(31, 111, 134, 0.14),
+    var(--shadow-glow), var(--shadow-hover);
+  background: var(--surface-glass-strong);
+}
+
+.repo-card-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.repo-card-inner:focus-visible {
+  outline: 2px solid rgba(42, 127, 158, 0.5);
+  outline-offset: 3px;
+  border-radius: 10px;
 }
 
 .repo-stats {
@@ -47,19 +124,26 @@
 .repo-name-div {
   display: flex;
   align-items: center;
+  color: var(--color-text);
 }
 
 .repo-svg {
   margin-right: 0.5rem;
   min-width: 16px;
+  flex-shrink: 0;
+  color: var(--color-accent);
+}
+
+.repo-svg path {
+  fill: currentColor;
 }
 
 .repo-name {
   text-align: left;
-  color: var(--color-text);
+  color: inherit;
   font-family: var(--font-body);
   margin-bottom: 0.75rem;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: 600;
   letter-spacing: 0.01em;
   overflow: hidden;
@@ -74,9 +158,9 @@
 .repo-description {
   text-align: left;
   font-family: var(--font-body);
-  font-size: 0.95rem;
-  line-height: 1.5;
-  margin-top: 0.8rem;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  margin-top: 0.75rem;
   margin-bottom: 0;
   color: var(--color-muted);
   white-space: pre-line;
@@ -102,14 +186,14 @@
 }
 
 @media (max-width: 1200px) {
-  .repo-card-div {
-    flex: 1 1 40%;
+  .project-category__grid .repo-card-div {
+    min-height: 0;
   }
 }
 
 @media (max-width: 768px) {
-  .repo-card-div {
-    flex: 1 1 100%;
+  .project-category__grid .repo-card-div {
+    min-height: 0;
   }
 
   .repo-name {

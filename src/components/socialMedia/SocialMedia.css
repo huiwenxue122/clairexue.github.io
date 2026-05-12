@@ -1,70 +1,75 @@
 .social-media-div {
-  font-size: 2em;
+  font-size: 1.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
 }
 
-.icon-button i {
-  color: white;
-}
 .icon-button {
-  margin-bottom: 10px;
+  margin-bottom: 0;
+  text-decoration: none;
+  border-radius: 999px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.icon-button i {
-  border-radius: 2.6rem;
+.icon-button:hover {
+  transform: translateY(-2px);
+}
+
+.icon-button__glass {
+  border-radius: 999px;
   cursor: pointer;
-  display: inline-block;
-  font-size: 1.3rem;
-  height: 2.6rem;
-  line-height: 2.6rem;
-  margin: 0 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  margin: 0 4px;
   position: relative;
   text-align: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
-  width: 2.6rem;
-  margin-bottom: 10px;
+  background: var(--social-icon-bg);
+  border: 1px solid var(--social-icon-border);
+  color: var(--color-primary-dark);
+  box-shadow: var(--glass-inset), 0 2px 10px rgba(11, 31, 42, 0.06);
+  backdrop-filter: blur(12px) saturate(1.2);
+  -webkit-backdrop-filter: blur(12px) saturate(1.2);
+  transition: color 0.25s ease, background 0.25s ease, border-color 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
-/* .facebook i {
-  background-color: #3b5998;
+.icon-button__glass i {
+  color: inherit;
 }
 
-.linkedin i {
-  background-color: #0e76a8;
+.icon-button:hover .icon-button__glass {
+  color: var(--color-accent);
+  border-color: rgba(30, 120, 145, 0.35);
+  box-shadow: var(--glass-inset), 0 0 0 1px rgba(56, 189, 248, 0.18),
+    0 6px 20px rgba(11, 31, 42, 0.09), 0 0 24px rgba(56, 189, 248, 0.1);
 }
 
-.github i {
-  background-color: #333;
+.icon-button:focus-visible .icon-button__glass {
+  outline: 2px solid rgba(56, 189, 248, 0.5);
+  outline-offset: 3px;
 }
 
-.gitlab i {
-  background-color: #fca326;
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
-.google i {
-  background-color: #ea4335;
-}
-
-.twitter i {
-  background-color: #1da1f2;
-}
-
-.instagram i {
-  background-color: #E4405F;
-} */
-
-/*Hover Transition*/
-/* .twitter i:hover, .google i:hover, .gitlab i:hover,
-.github i:hover ,.linkedin i:hover ,.facebook i:hover, .instagram i:hover{
-  background-color: black;
-  transition: 0.3s ease-in;
-} */
-
-/* Media Query */
 @media (max-width: 768px) {
   .social-media-div {
-    text-align: center;
+    justify-content: center;
   }
 }

@@ -46,13 +46,41 @@ code {
 }
 
 :root {
-  --scrollbar-color: #c9c6c1;
+  --scrollbar-color: rgba(56, 189, 248, 0.42);
   --font-heading: "Cormorant Garamond", Georgia, serif;
   --font-body: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
-  --color-text: #1a1d29;
-  --color-muted: #5c6174;
-  --color-accent: #6b5b4f;
+
+  --color-bg-base: #eef7fa;
+  --color-navy: #0b1f2a;
+  --color-navy-mid: #102d3d;
+  --color-primary-dark: #0b1f2a;
+  --color-primary-mid: #102d3d;
+  --color-accent: #1e7891;
+  --color-accent-strong: #38bdf8;
+  --color-violet: #8b5cf6;
+  --color-text: #0b1f2a;
+  --color-muted: #5f6f7e;
+  --color-link: #0f6b82;
+  --border-subtle: rgba(15, 37, 51, 0.12);
+  --surface-border: rgba(15, 37, 51, 0.12);
+  --surface-divider: rgba(15, 37, 51, 0.08);
+  --surface-glass: rgba(255, 255, 255, 0.62);
+  --surface-glass-strong: rgba(255, 255, 255, 0.82);
+  --surface-glass-dark: rgba(11, 31, 42, 0.82);
+  --tag-bg: rgba(236, 252, 255, 0.88);
+  --glass-blur: 42px;
+  --glass-saturate: 1.38;
+  --glass-inset: inset 0 1px 0 rgba(255, 255, 255, 0.92);
+  --shadow-elevated: 0 8px 32px rgba(11, 31, 42, 0.07),
+    0 2px 8px rgba(11, 31, 42, 0.04);
+  --shadow-glow: 0 0 0 1px rgba(30, 120, 145, 0.12),
+    0 14px 40px rgba(11, 31, 42, 0.08);
+  --shadow-hover: 0 20px 48px rgba(11, 31, 42, 0.11);
+  --neon-edge: rgba(30, 120, 145, 0.28);
+  --tag-border: rgba(30, 120, 145, 0.2);
+  --social-icon-bg: rgba(255, 255, 255, 0.9);
+  --social-icon-border: rgba(15, 37, 51, 0.12);
 }
 
 html,
@@ -70,12 +98,13 @@ body {
 body {
   margin: 0;
   font-family: var(--font-body);
-  font-size: 18px;
-  line-height: 1.6;
+  font-size: 17px;
+  line-height: 1.68;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.015em;
+  color: var(--color-text);
 }
 
 /* Media Query */
@@ -89,4 +118,99 @@ body {
 * {
   scrollbar-width: thin;
   scrollbar-color: var(--scrollbar-color) transparent;
+}
+
+/* Reusable layout + surface primitives */
+.ds-glass-card {
+  background: var(--surface-glass);
+  backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+  -webkit-backdrop-filter: blur(var(--glass-blur))
+    saturate(var(--glass-saturate));
+  border: 1px solid var(--surface-border);
+  border-radius: 16px;
+  box-shadow: var(--glass-inset), var(--shadow-elevated);
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s ease, border-color 0.3s ease;
+}
+
+.ds-glass-card:hover {
+  border-color: rgba(30, 120, 145, 0.26);
+  box-shadow: var(--glass-inset), var(--shadow-hover),
+    0 0 0 1px rgba(56, 189, 248, 0.12), 0 0 36px rgba(56, 189, 248, 0.12);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ds-glass-card:hover {
+    transform: none;
+  }
+}
+
+.ds-section {
+  width: 92%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+}
+
+.ds-tag-pill {
+  display: inline-block;
+  padding: 0.28rem 0.72rem;
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  border: 1px solid var(--tag-border);
+  background: var(--tag-bg);
+  color: var(--color-text);
+  transition: border-color 0.22s ease, background 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.ds-tag-pill:hover {
+  border-color: rgba(56, 189, 248, 0.45);
+  box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.12);
+}
+
+.ds-btn-primary {
+  background: linear-gradient(135deg, #0b1f2a 0%, #102d3d 38%, #1e7891 100%);
+  border: 1px solid rgba(30, 120, 145, 0.5);
+  color: #f8fbfd;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 0.65rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 22px rgba(11, 31, 42, 0.14);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.25s ease;
+}
+
+.ds-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 28px rgba(56, 189, 248, 0.22),
+    0 12px 32px rgba(11, 31, 42, 0.16);
+  filter: brightness(1.04);
+  color: #fff;
+}
+
+.ds-text-muted {
+  color: var(--color-muted);
+}
+
+.ds-link-subtle {
+  color: var(--color-link);
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.ds-link-subtle:hover {
+  color: var(--color-accent-strong);
+  border-bottom-color: rgba(56, 189, 248, 0.45);
 }

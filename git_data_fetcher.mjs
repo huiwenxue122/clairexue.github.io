@@ -271,6 +271,18 @@ fetch(baseUrl, {
     // console.log(txt);
     const projects = data["data"]["user"]["pinnedItems"]["nodes"];
     var newProjects = { data: [] };
+    try {
+      const raw = fs.readFileSync(
+        "./src/shared/opensource/projects.json",
+        "utf8"
+      );
+      const existing = JSON.parse(raw);
+      if (Array.isArray(existing.categories) && existing.categories.length) {
+        newProjects.categories = existing.categories;
+      }
+    } catch (_) {
+      /* no existing file or invalid JSON */
+    }
     for (var i = 0; i < projects.length; i++) {
       var obj = projects[i];
       var langobjs = obj["languages"]["nodes"];

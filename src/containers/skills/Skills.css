@@ -12,18 +12,31 @@
 
 .whatido-section-title {
   font-family: var(--font-heading);
-  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-size: clamp(1.45rem, 2.4vw, 1.95rem);
   font-weight: 600;
   letter-spacing: 0.02em;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.35rem;
+  line-height: 1.25;
 }
 
 .whatido-education-summary,
 .whatido-personal-content {
   font-family: var(--font-body);
-  font-size: 1.05rem;
-  line-height: 1.7;
+  font-size: 1.02rem;
+  line-height: 1.72;
   margin: 0;
+}
+
+.whatido-personal-panel {
+  margin-top: 0.25rem;
+  padding: 1.5rem 1.65rem;
+  border-radius: 16px;
+}
+
+.whatido-personal-panel:hover {
+  transform: translateY(-2px);
+  border-color: rgba(31, 111, 134, 0.16);
+  box-shadow: var(--glass-inset), 0 10px 36px rgba(15, 37, 51, 0.07);
 }
 
 /* Education entries (homepage) */
@@ -35,9 +48,21 @@
 
 .whatido-education-entry {
   font-family: var(--font-body);
-  border-radius: 8px;
-  border: 1px solid rgba(26, 29, 41, 0.08);
-  padding: 1.25rem 1.5rem;
+  border-radius: 14px;
+  border: 1px solid var(--surface-border);
+  padding: 1.35rem 1.5rem;
+  background: var(--surface-glass);
+  backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+  -webkit-backdrop-filter: blur(var(--glass-blur))
+    saturate(var(--glass-saturate));
+  box-shadow: var(--glass-inset), var(--shadow-elevated);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatido-education-entry:hover {
+  transform: translateY(-2px);
+  border-color: rgba(31, 111, 134, 0.15);
+  box-shadow: var(--glass-inset), var(--shadow-glow);
 }
 
 .whatido-education-header {
@@ -126,10 +151,23 @@
   flex-direction: column;
   height: 100%;
   min-height: 180px;
-  border-radius: 8px;
-  border: 1px solid rgba(26, 29, 41, 0.08);
+  border-radius: 14px;
+  border: 1px solid var(--surface-border);
   padding: 1.5rem 1.25rem;
   font-family: var(--font-body);
+  box-shadow: var(--glass-inset), 0 1px 2px rgba(15, 37, 51, 0.04),
+    var(--shadow-elevated);
+  backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+  -webkit-backdrop-filter: blur(var(--glass-blur))
+    saturate(var(--glass-saturate));
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.tech-stack-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(31, 111, 134, 0.2);
+  box-shadow: var(--shadow-glow);
 }
 
 .tech-stack-card-body {
@@ -144,7 +182,7 @@
   letter-spacing: 0.03em;
   margin: 0 0 1rem 0;
   padding-bottom: 0.75rem;
-  border-bottom: 1px solid rgba(26, 29, 41, 0.08);
+  border-bottom: 1px solid var(--surface-divider);
   flex-shrink: 0;
 }
 
@@ -173,10 +211,17 @@
   display: inline-block;
   padding: 0.35rem 0.75rem;
   border-radius: 999px;
-  border: 1px solid rgba(26, 29, 41, 0.15);
+  border: 1px solid var(--tag-border);
   font-size: 0.875rem;
   font-weight: 500;
   letter-spacing: 0.02em;
+  transition: border-color 0.25s ease, background 0.25s ease,
+    transform 0.2s ease;
+}
+
+.tech-stack-tag:hover {
+  transform: translateY(-1px);
+  border-color: rgba(31, 111, 134, 0.32);
 }
 
 .tech-stack-desc {

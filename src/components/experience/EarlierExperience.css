@@ -1,0 +1,97 @@
+.exp-earlier {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--surface-border);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 0.35rem 0.5rem;
+}
+
+.exp-earlier__summary {
+  list-style: none;
+  cursor: pointer;
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 600;
+  padding: 0.65rem 0.75rem;
+  border-radius: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.75rem;
+  user-select: none;
+}
+
+.exp-earlier__summary::-webkit-details-marker {
+  display: none;
+}
+
+.exp-earlier__summary::after {
+  content: "▸";
+  margin-left: auto;
+  font-size: 0.85em;
+  color: var(--color-muted);
+  transition: transform 0.25s ease;
+}
+
+.exp-earlier[open] .exp-earlier__summary::after {
+  transform: rotate(90deg);
+}
+
+.exp-earlier__hint {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+.exp-earlier__body {
+  padding: 0.5rem 0.75rem 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.exp-earlier__row {
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+}
+
+.exp-earlier__row-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.35rem 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.exp-earlier__title {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.exp-earlier__dates {
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.exp-earlier__company {
+  margin: 0 0 0.35rem;
+  font-size: 0.86rem;
+  font-weight: 500;
+}
+
+.exp-earlier__blurb {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.exp-earlier__summary:focus-visible {
+  outline: 2px solid rgba(42, 127, 158, 0.45);
+  outline-offset: 2px;
+}
