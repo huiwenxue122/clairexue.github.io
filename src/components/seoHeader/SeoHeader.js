@@ -77,6 +77,20 @@ function SeoHeader() {
       <meta name="theme-color" content="#1E7891" />
       <link rel="canonical" href={personUrl} />
 
+      <link rel="icon" href={absoluteUrl("/favicon.ico")} sizes="any" />
+      <link rel="shortcut icon" href={absoluteUrl("/favicon.ico")} />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href={absoluteUrl("/favicon.png")}
+      />
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href={absoluteUrl("/apple-touch-icon.png")}
+      />
+
       <meta property="og:title" content={seo?.og?.title} />
       <meta
         property="og:description"
