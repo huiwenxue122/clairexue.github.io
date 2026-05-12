@@ -228,26 +228,25 @@ export const deepGlassCyberTheme = {
   tagBg: "rgba(255, 255, 255, 0.04)",
 };
 
-/** Premium AI product — light glass, deep navy / teal / cyan / soft violet */
+/** Minimal premium portfolio — cool light ground, navy + teal/cyan accents only */
 export const lightGlassCyberTheme = {
-  body: "#EEF7FA",
-  text: "#0B1F2A",
-  expTxtColor: "#0B1F2A",
-  highlight: "rgba(56, 189, 248, 0.07)",
+  body: "#F7FBFC",
+  text: "#071A24",
+  expTxtColor: "#071A24",
+  highlight: "rgba(56, 189, 248, 0.06)",
   dark: "#0B1F2A",
-  secondaryText: "#5F6F7E",
+  secondaryText: "#536879",
   imageHighlight: "#1E7891",
   compImgHighlight: "rgba(255, 255, 255, 0.96)",
   jacketColor: "#1E7891",
-  headerColor: "rgba(11, 31, 42, 0.07)",
-  splashBg: "#EEF7FA",
-  surfaceBorder: "rgba(15, 37, 51, 0.12)",
-  tagBorder: "rgba(30, 120, 145, 0.22)",
-  tagBg: "rgba(236, 252, 255, 0.88)",
-  pageBackdrop: `radial-gradient(circle at 80% 10%, rgba(56, 189, 248, 0.18), transparent 32%),
-    radial-gradient(circle at 15% 85%, rgba(139, 92, 246, 0.10), transparent 30%),
-    radial-gradient(ellipse 100% 80% at 48% 45%, rgba(255, 255, 255, 0.65), transparent 58%),
-    linear-gradient(135deg, #F8FCFF 0%, #EEF7FA 45%, #DDECF4 100%)`,
+  headerColor: "rgba(11, 31, 42, 0.06)",
+  splashBg: "#F7FBFC",
+  surfaceBorder: "rgba(11, 31, 42, 0.1)",
+  tagBorder: "rgba(30, 120, 145, 0.2)",
+  tagBg: "rgba(225, 243, 248, 0.75)",
+  pageBackdrop: `linear-gradient(165deg, #F7FBFC 0%, #EEF5F8 52%, #E8F1F5 100%),
+    radial-gradient(ellipse 90% 55% at 78% 8%, rgba(56, 189, 248, 0.08), transparent 45%),
+    radial-gradient(ellipse 70% 45% at 12% 92%, rgba(30, 120, 145, 0.05), transparent 50%)`,
 };
 
 export const chosenTheme = lightGlassCyberTheme;

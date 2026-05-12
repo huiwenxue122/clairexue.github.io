@@ -2,37 +2,43 @@
   width: 92%;
   max-width: 1120px;
   margin: 0 auto;
-  padding: 1rem 1rem 1.25rem;
+  padding: 0.35rem 1rem 0.55rem;
 }
 
 .home-cap__title {
-  margin: 0 0 0.85rem;
+  margin: 0 0 0.55rem;
   font-family: var(--font-heading);
-  font-size: clamp(1.35rem, 2.4vw, 1.65rem);
+  font-size: clamp(1.28rem, 2.2vw, 1.52rem);
   font-weight: 600;
   letter-spacing: 0.02em;
+  color: var(--color-text);
 }
 
 .home-cap__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 0.85rem;
+  gap: 0.65rem;
 }
 
 .home-cap__card {
-  padding: 1rem 1.05rem;
-  border-radius: 14px;
+  padding: 0.72rem 0.85rem 0.78rem;
+  border-radius: 13px;
   display: flex;
   flex-direction: column;
-  gap: 0.45rem;
+  gap: 0.32rem;
   min-height: 0;
 }
 
+.home-cap__card--premium {
+  border-color: rgba(11, 31, 42, 0.12);
+  background: rgba(255, 255, 255, 0.68);
+}
+
 .home-cap__card:hover {
-  transform: translateY(-3px);
-  border-color: rgba(31, 111, 134, 0.18);
-  box-shadow: var(--glass-inset), 0 10px 32px rgba(15, 37, 51, 0.08),
-    0 0 0 1px rgba(31, 111, 134, 0.08);
+  transform: translateY(-2px);
+  border-color: rgba(11, 31, 42, 0.16);
+  box-shadow: var(--glass-inset), 0 8px 28px rgba(11, 31, 42, 0.07),
+    0 0 0 1px rgba(30, 120, 145, 0.1);
 }
 
 .home-cap__card-head {
@@ -43,31 +49,33 @@
 
 .home-cap__icon {
   flex-shrink: 0;
-  width: 2rem;
-  height: 2rem;
+  width: 1.75rem;
+  height: 1.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
-  font-size: 0.95rem;
-  color: var(--color-accent-strong);
-  background: rgba(255, 255, 255, 0.7);
-  border: 1px solid rgba(15, 37, 51, 0.08);
+  border-radius: 8px;
+  font-size: 0.82rem;
+  color: var(--color-accent);
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(11, 31, 42, 0.1);
 }
 
 .home-cap__card-title {
   margin: 0;
   font-family: var(--font-body);
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   font-weight: 600;
   line-height: 1.3;
   letter-spacing: 0.01em;
+  color: var(--color-text);
 }
 
 .home-cap__blurb {
   margin: 0;
-  font-size: 0.8rem;
-  line-height: 1.45;
+  font-size: 0.775rem;
+  line-height: 1.42;
+  color: var(--color-muted);
 }
 
 @media (max-width: 992px) {

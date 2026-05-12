@@ -839,8 +839,6 @@ const homePage = {
       "Vector DBs",
       "FastAPI",
       "LLM Evaluation",
-      "AWS",
-      "Docker",
       "PyTorch",
     ],
     floatLabels: ["Agentic AI", "RAG Systems", "LLM Apps", "Product Builder"],
@@ -849,13 +847,13 @@ const homePage = {
     {
       title: "Agentic AI Systems",
       blurb:
-        "LangGraph workflows, tool routing, guardrails, human-in-the-loop logic, and multi-agent orchestration.",
+        "LangGraph workflows, tool routing, guardrails, and multi-agent orchestration.",
       iconClass: "fa-robot",
     },
     {
       title: "RAG & Knowledge Systems",
       blurb:
-        "Document ingestion, embeddings, vector search, GraphRAG, Neo4j, FAISS, and evidence-backed answers.",
+        "Document ingestion, embeddings, vector search, GraphRAG, Neo4j, and evidence-backed answers.",
       iconClass: "fa-database",
     },
     {
@@ -867,66 +865,12 @@ const homePage = {
     {
       title: "Full-Stack AI Products",
       blurb:
-        "FastAPI, React, Next.js, Streamlit, REST APIs, Docker, cloud deployment, and production UX.",
+        "FastAPI, React, Next.js, REST APIs, Docker, cloud deployment, and production UX.",
       iconClass: "fa-layer-group",
     },
   ],
-  coreStack: [
-    {
-      label: "LLM & Agents",
-      items: [
-        "OpenAI API",
-        "Anthropic",
-        "Gemini",
-        "LangChain",
-        "LangGraph",
-        "LlamaIndex",
-        "function calling",
-        "tool use",
-      ],
-    },
-    {
-      label: "RAG & Data",
-      items: [
-        "FAISS",
-        "Pinecone",
-        "Chroma",
-        "Neo4j",
-        "embeddings",
-        "vector search",
-        "GraphRAG",
-        "SQL",
-      ],
-    },
-    {
-      label: "Backend & Deployment",
-      items: [
-        "Python",
-        "FastAPI",
-        "REST APIs",
-        "Docker",
-        "AWS",
-        "Vercel",
-        "CI/CD",
-      ],
-    },
-    {
-      label: "ML & Evaluation",
-      items: [
-        "PyTorch",
-        "scikit-learn",
-        "pandas",
-        "NumPy",
-        "evaluation",
-        "observability",
-        "LangSmith",
-      ],
-    },
-    {
-      label: "Frontend",
-      items: ["React", "Next.js", "TypeScript", "Streamlit", "Tailwind CSS"],
-    },
-  ],
+  coreStackLine:
+    "LangGraph · LangChain · OpenAI API · Anthropic · FAISS · Neo4j · FastAPI · Docker · AWS · PyTorch",
   education: {
     school: "Brown University",
     degree: "M.S. Electrical and Computer Engineering",
@@ -937,7 +881,7 @@ const homePage = {
     statement:
       "I like building AI systems that are reliable, explainable, and useful in real workflows.",
     personalNote:
-      "Outside of engineering, I play guitar and guzheng, practice calligraphy, and study French. I like how music, language, and visual structure all train the same instinct I use in building AI products: turning messy signals into something clear and useful.",
+      "Outside of engineering, I play guitar and guzheng, practice calligraphy, and study French. Music, language, and visual structure shape how I think about building clear and culturally aware AI products.",
   },
 };
 

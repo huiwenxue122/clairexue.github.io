@@ -30,7 +30,7 @@ export const GlobalStyles = createGlobalStyle`
     overflow-x: hidden;
   }
 
-  /* Parallax mist over html mesh — keeps depth when scrolling */
+  /* Very light parallax wash — cyan/teal only, no violet */
   body::before {
     content: "";
     position: fixed;
@@ -38,15 +38,14 @@ export const GlobalStyles = createGlobalStyle`
     z-index: -2;
     pointer-events: none;
     background:
-      radial-gradient(ellipse 88% 62% at 82% 12%, rgba(56, 189, 248, 0.14), transparent 58%),
-      radial-gradient(ellipse 75% 55% at 14% 88%, rgba(139, 92, 246, 0.09), transparent 54%),
-      radial-gradient(ellipse 80% 50% at 50% 100%, rgba(30, 120, 145, 0.06), transparent 52%);
-    opacity: 0.95;
+      radial-gradient(ellipse 88% 58% at 82% 10%, rgba(56, 189, 248, 0.08), transparent 55%),
+      radial-gradient(ellipse 72% 50% at 14% 88%, rgba(30, 120, 145, 0.05), transparent 52%),
+      radial-gradient(ellipse 78% 48% at 50% 100%, rgba(11, 31, 42, 0.03), transparent 50%);
+    opacity: 0.9;
     transform: translate3d(0, var(--parallax-bg, 0px), 0);
     will-change: transform;
   }
 
-  /* Soft specular sheen */
   body::after {
     content: "";
     position: fixed;
@@ -55,23 +54,23 @@ export const GlobalStyles = createGlobalStyle`
     pointer-events: none;
     background: linear-gradient(
       188deg,
-      rgba(255, 255, 255, 0.5) 0%,
-      rgba(255, 255, 255, 0.1) 24%,
-      transparent 50%
+      rgba(255, 255, 255, 0.42) 0%,
+      rgba(255, 255, 255, 0.06) 28%,
+      transparent 52%
     );
-    animation: ambientSheen 22s ease-in-out infinite;
-    opacity: 0.48;
+    animation: ambientSheen 26s ease-in-out infinite;
+    opacity: 0.35;
   }
 
   @keyframes ambientSheen {
     0%,
     100% {
-      opacity: 0.4;
+      opacity: 0.3;
       transform: scale(1) translateY(0);
     }
     50% {
-      opacity: 0.56;
-      transform: scale(1.006) translateY(-0.12%);
+      opacity: 0.42;
+      transform: scale(1.004) translateY(-0.08%);
     }
   }
 
@@ -95,7 +94,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   ::selection {
-    background: rgba(56, 189, 248, 0.24);
-    color: #0b1f2a;
+    background: rgba(56, 189, 248, 0.22);
+    color: #071a24;
   }
 `;

@@ -51,7 +51,7 @@ code {
   --font-body: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
 
-  --color-bg-base: #eef7fa;
+  --color-bg-base: #f7fbfc;
   --color-navy: #0b1f2a;
   --color-navy-mid: #102d3d;
   --color-primary-dark: #0b1f2a;
@@ -59,16 +59,16 @@ code {
   --color-accent: #1e7891;
   --color-accent-strong: #38bdf8;
   --color-violet: #8b5cf6;
-  --color-text: #0b1f2a;
-  --color-muted: #5f6f7e;
-  --color-link: #0f6b82;
-  --border-subtle: rgba(15, 37, 51, 0.12);
-  --surface-border: rgba(15, 37, 51, 0.12);
-  --surface-divider: rgba(15, 37, 51, 0.08);
-  --surface-glass: rgba(255, 255, 255, 0.62);
-  --surface-glass-strong: rgba(255, 255, 255, 0.82);
+  --color-text: #071a24;
+  --color-muted: #536879;
+  --color-link: #0d5f73;
+  --border-subtle: rgba(11, 31, 42, 0.1);
+  --surface-border: rgba(11, 31, 42, 0.1);
+  --surface-divider: rgba(11, 31, 42, 0.08);
+  --surface-glass: rgba(255, 255, 255, 0.68);
+  --surface-glass-strong: rgba(255, 255, 255, 0.88);
   --surface-glass-dark: rgba(11, 31, 42, 0.82);
-  --tag-bg: rgba(236, 252, 255, 0.88);
+  --tag-bg: rgba(225, 243, 248, 0.85);
   --glass-blur: 42px;
   --glass-saturate: 1.38;
   --glass-inset: inset 0 1px 0 rgba(255, 255, 255, 0.92);
@@ -134,9 +134,9 @@ body {
 }
 
 .ds-glass-card:hover {
-  border-color: rgba(30, 120, 145, 0.26);
+  border-color: rgba(11, 31, 42, 0.14);
   box-shadow: var(--glass-inset), var(--shadow-hover),
-    0 0 0 1px rgba(56, 189, 248, 0.12), 0 0 36px rgba(56, 189, 248, 0.12);
+    0 0 0 1px rgba(30, 120, 145, 0.08), 0 0 28px rgba(56, 189, 248, 0.08);
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -18,21 +18,9 @@ function HeroSection({ theme }) {
       <section className="home-hero" id="greeting">
         <div className="home-hero__inner">
           <div className="home-hero__copy">
-            <h1 className="home-hero__headline" style={{ color: theme.text }}>
-              {hero.headline}
-            </h1>
-            <p
-              className="home-hero__subtitle"
-              style={{ color: theme.secondaryText }}
-            >
-              {hero.subtitle}
-            </p>
-            <p
-              className="home-hero__supporting"
-              style={{ color: theme.secondaryText }}
-            >
-              {hero.supporting}
-            </p>
+            <h1 className="home-hero__headline">{hero.headline}</h1>
+            <p className="home-hero__subtitle">{hero.subtitle}</p>
+            <p className="home-hero__supporting">{hero.supporting}</p>
             <div className="home-hero__ctas">
               <Link
                 to="/projects"
@@ -86,7 +74,6 @@ function HeroSection({ theme }) {
                   className={`home-hero__float home-hero__float--${
                     floatPositions[i] || "tl"
                   }`}
-                  style={{ color: theme.text }}
                 >
                   {label}
                 </span>

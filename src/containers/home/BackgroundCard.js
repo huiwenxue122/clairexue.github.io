@@ -3,49 +3,24 @@ import { Fade } from "react-reveal";
 import { homePage } from "../../portfolio";
 import "./BackgroundCard.css";
 
-function BackgroundCard({ theme }) {
+function BackgroundCard() {
   const { education, about } = homePage;
 
   return (
     <Fade bottom duration={700} distance="18px">
       <section className="home-bg" id="background">
-        <div
-          className="home-bg__card ds-glass-card"
-          style={{
-            borderColor: theme.surfaceBorder || undefined,
-          }}
-        >
+        <div className="home-bg__card ds-glass-card">
           <div className="home-bg__col home-bg__col--edu">
-            <h2 className="home-bg__heading" style={{ color: theme.text }}>
-              Background
-            </h2>
-            <p className="home-bg__school" style={{ color: theme.text }}>
-              {education.school}
-            </p>
-            <p
-              className="home-bg__degree"
-              style={{ color: theme.secondaryText }}
-            >
-              {education.degree}
-            </p>
-            <p className="home-bg__meta" style={{ color: theme.secondaryText }}>
-              {education.gpa}
-            </p>
-            <p className="home-bg__meta" style={{ color: theme.secondaryText }}>
-              {education.period}
-            </p>
+            <h2 className="home-bg__heading">Background</h2>
+            <p className="home-bg__school">{education.school}</p>
+            <p className="home-bg__degree">{education.degree}</p>
+            <p className="home-bg__meta">{education.gpa}</p>
+            <p className="home-bg__meta">{education.period}</p>
           </div>
           <div className="home-bg__col home-bg__col--about">
-            <p className="home-bg__statement" style={{ color: theme.text }}>
-              {about.statement}
-            </p>
+            <p className="home-bg__statement">{about.statement}</p>
             {about.personalNote ? (
-              <p
-                className="home-bg__personal"
-                style={{ color: theme.secondaryText }}
-              >
-                {about.personalNote}
-              </p>
+              <p className="home-bg__personal">{about.personalNote}</p>
             ) : null}
           </div>
         </div>
