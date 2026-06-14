@@ -31,12 +31,60 @@
   z-index: -1;
 }
 
-/* Secondary photo — rowing, same glass language as hero portrait */
+/* Secondary photos — portrait + rowing side by side */
 .contact-page__accent {
   position: relative;
   margin: 1.35rem auto 0;
-  max-width: min(640px, 100%);
+  max-width: min(880px, 100%);
   padding: 0;
+}
+
+.contact-page__accent-row {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.contact-page__accent-item {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-page__accent-item--portrait {
+  width: fit-content;
+  max-width: 100%;
+}
+
+.contact-page__accent-item .contact-page__accent-frame {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.contact-page__accent-item--portrait .contact-page__accent-frame {
+  flex: 0 0 auto;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.contact-page__accent-viewport,
+.contact-page__accent-viewport--portrait {
+  flex: 1 0 auto;
+  height: min(38vh, 360px);
+  aspect-ratio: unset;
+  max-height: none;
+}
+
+.contact-page__accent-item--portrait .contact-page__accent-viewport--portrait {
+  width: fit-content;
+  max-width: 100%;
+  flex: 0 0 auto;
+  line-height: 0;
 }
 
 .contact-page__accent-glow {
@@ -92,8 +140,6 @@
 .contact-page__accent-viewport {
   border-radius: 12px;
   overflow: hidden;
-  aspect-ratio: 16 / 9;
-  max-height: min(38vh, 360px);
   background: rgba(248, 250, 252, 0.5);
   box-shadow: inset 0 0 0 1px rgba(15, 37, 51, 0.05);
 }
@@ -103,6 +149,14 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
+}
+
+.contact-page__accent-item--portrait .contact-page__accent-img {
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
   object-position: center;
 }
 
@@ -127,6 +181,35 @@
 }
 
 @media (max-width: 800px) {
+  .contact-page__accent-row {
+    grid-template-columns: 1fr;
+    max-width: min(340px, 88vw);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-page__accent-item--portrait {
+    width: 100%;
+    justify-self: center;
+  }
+
+  .contact-page__accent-item--portrait .contact-page__accent-frame,
+  .contact-page__accent-item--portrait
+    .contact-page__accent-viewport--portrait {
+    width: 100%;
+  }
+
+  .contact-page__accent-item--portrait .contact-page__accent-img {
+    width: 100%;
+    height: auto;
+    max-height: min(36vh, 320px);
+  }
+
+  .contact-page__accent-viewport,
+  .contact-page__accent-viewport--portrait {
+    height: min(36vh, 320px);
+  }
+
   .contact-page__more {
     margin-left: auto;
     margin-right: auto;

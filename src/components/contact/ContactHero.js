@@ -26,8 +26,6 @@ function ContactHero({
               src={imageSrc}
               alt="Claire Xue"
               className="contact-hero__photo"
-              width={400}
-              height={533}
               loading="eager"
             />
           </div>

@@ -14,6 +14,7 @@ const contactSection = contactPageData.contactSection;
 const availability = contactPageData.availability;
 
 const rowingImageSrc = require("../../assets/images/rowing.JPG");
+const accentPortraitSrc = require("../../assets/images/Profile.JPG");
 
 function socialUrl(name) {
   const entry = socialMediaLinks.find((m) => m.name === name);
@@ -48,22 +49,38 @@ class Contact extends Component {
             />
           </ContactHero>
           <AvailabilityCard theme={theme} data={availability} />
-          <figure className="contact-page__accent" aria-label="Rowing">
+          <figure className="contact-page__accent" aria-label="Photos">
             <div className="contact-page__accent-glow" aria-hidden />
             <div
               className="contact-page__accent-glow contact-page__accent-glow--layer2"
               aria-hidden
             />
-            <div className="contact-page__accent-frame ds-glass-card">
-              <div className="contact-page__accent-viewport">
-                <img
-                  src={rowingImageSrc}
-                  alt="Claire rowing"
-                  className="contact-page__accent-img"
-                  width={960}
-                  height={540}
-                  loading="lazy"
-                />
+            <div className="contact-page__accent-row">
+              <div className="contact-page__accent-item contact-page__accent-item--portrait">
+                <div className="contact-page__accent-frame ds-glass-card">
+                  <div className="contact-page__accent-viewport contact-page__accent-viewport--portrait">
+                    <img
+                      src={accentPortraitSrc}
+                      alt="Claire Xue"
+                      className="contact-page__accent-img"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="contact-page__accent-item contact-page__accent-item--wide">
+                <div className="contact-page__accent-frame ds-glass-card">
+                  <div className="contact-page__accent-viewport">
+                    <img
+                      src={rowingImageSrc}
+                      alt="Claire rowing"
+                      className="contact-page__accent-img"
+                      width={960}
+                      height={540}
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </figure>

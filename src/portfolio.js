@@ -626,22 +626,17 @@ const publications = {
 // Contact Page
 const contactPageData = {
   contactSection: {
-    profile_image_path: "Profile.JPG",
+    profile_image_path: "contact-hero.JPG",
     title: "Let's build something useful with AI.",
     subtitle:
-      "I'm open to AI Engineer, GenAI Engineer, and Applied ML Engineer roles, especially work involving agentic systems, RAG, LLM applications, and production ML tools.",
+      "I'm open to AI Engineer and Applied ML Engineer roles, especially work involving agentic systems, RAG, LLM applications, and production ML tools.",
     email: "clairexuework@gmail.com",
-    locationLine: "Based in Providence / Boston area. Open to relocation.",
+    locationLine: "Based in New York / Boston area. Open to relocation.",
   },
   /** Compact recruiting hints — Contact page availability card */
   availability: {
     lookingLabel: "Currently looking for:",
-    lookingFor: [
-      "AI Engineer",
-      "GenAI Engineer",
-      "Applied ML Engineer",
-      "ML Engineer",
-    ],
+    lookingFor: ["AI Engineer", "Applied ML Engineer"],
     focusLabel: "Focus areas:",
     focusAreas: [
       "Agentic AI",
