@@ -17,4 +17,5 @@ export const PROJECT_COVERS = {
   "deep-image-restoration": `${GEN}/09_transformer_image_restoration.png`,
   "eeg-bci-target-classification": `${GEN}/10_neurotarget_eeg_classifier.png`,
   "laserpoint-3d-scanner": `${GEN}/laserpoint_3d_scanner_762x235.png`,
+  "roofing-lead-intelligence": `${GEN}/rooflead.png`,
 };

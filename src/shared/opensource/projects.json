@@ -8,7 +8,8 @@
         "redlineai-legal-risk-detector",
         "interactive-novel-ai-platform",
         "nasa-voice-ai-assistant",
-        "enterprise-knowledge-qa"
+        "enterprise-knowledge-qa",
+        "roofing-lead-intelligence"
       ]
     },
     {
@@ -31,6 +32,24 @@
     }
   ],
   "data": [
+    {
+      "id": "roofing-lead-intelligence",
+      "name": "Roofing Lead Intelligence Platform",
+      "createdAt": "2026-03-01T00:00:00Z",
+      "url": "https://github.com/huiwenxue122/Instalily-roofing-distributor-AI-sales-platform",
+      "description": "MVP for roofing distributor sales teams: turn GAF-style contractor listings around a ZIP into deduplicated, scored, explainable leads with rep-ready talking points in a React dashboard.\n\nIngests contractor records via live Playwright scraping when available, otherwise a browser-captured snapshot. Normalizes and deduplicates leads on stable identity (company, city, state, phone), then scores each lead with deterministic dimensions—distance, certification, rating, reviews, contact readiness—never an LLM.\n\nLLM-generated insights are persisted separately from ranking: template insights on refresh, optional offline enrichment scripts, with scoring and scraping kept deterministic. Reps get filters, detail review, CSV export, and source provenance (live vs snapshot). Optional Perplexity research adds cached web-grounded summaries for top leads without calling Sonar on page load.",
+      "summary": "ZIP-to-lead MVP for roofing sales: dedupe GAF-style contractors, deterministic scoring, LLM talking points, React dashboard.",
+      "isFork": false,
+      "languages": [],
+      "tags": [
+        "Python",
+        "FastAPI",
+        "React",
+        "Playwright",
+        "SQLite"
+      ],
+      "demoUrl": "https://instalily-roofing-distributor-ai-sa.vercel.app"
+    },
     {
       "id": "citypulse-wallet",
       "name": "CityPulse-Wallet",
