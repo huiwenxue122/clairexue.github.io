@@ -37,6 +37,9 @@ class Projects extends Component {
     });
     const categories = ProjectsData.categories || [];
 
+    const reposForCategory = (cat) =>
+      (cat.projectIds || []).map((pid) => repoById[pid]).filter(Boolean);
+
     return (
       <div className="projects-main">
         <Header theme={theme} />
@@ -116,18 +119,14 @@ class Projects extends Component {
                           More projects will be listed here soon.
                         </p>
                       ) : (
-                        (cat.projectIds || []).map((pid) => {
-                          const repo = repoById[pid];
-                          if (!repo) return null;
-                          return (
-                            <ProjectRowCard
-                              key={repo.id}
-                              repo={repo}
-                              theme={theme}
-                              coverImage={PROJECT_COVERS[repo.id]}
-                            />
-                          );
-                        })
+                        reposForCategory(cat).map((repo) => (
+                          <ProjectRowCard
+                            key={repo.id}
+                            repo={repo}
+                            theme={theme}
+                            coverImage={PROJECT_COVERS[repo.id]}
+                          />
+                        ))
                       )}
                     </div>
                   </div>
